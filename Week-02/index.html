@@ -34,7 +34,7 @@
       <h4><u>Contact Information</u></h4>
       <span>
         <p>
-          <a href="...">
+          <a href="#formulario">
             <img
               src="assets/email.png"
               alt="icono email"
@@ -100,12 +100,12 @@
         magnam perferendis, repellat, quod nihil accusantium, quaerat eveniet
         possimus alias.
       </p>
-    
-    <section>
+
+      <section>
         <h3>
           <u> About Mega Rocket </u>
         </h3>
-        <img src="assets/gim ejercicio.png" alt="people exercise">
+        <img src="assets/gim ejercicio.png" alt="people exercise" />
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas,
           maxime tenetur! Vel sed veniam ad ab delectus maiores suscipit error
@@ -118,7 +118,67 @@
           magnam perferendis, repellat, quod nihil accusantium, quaerat eveniet
           possimus alias.
         </p>
-        <img src="assets/gim maquinas.png" alt="gim machines">
+        <img src="assets/gim maquinas.png" alt="gim machines" />
+      </section>
+
+      <form id="formulario">
+        <h3>
+          <u> Get in Touch </u>
+        </h3>
+        <div>
+          <label>First name</label>
+          <input
+            type="text"
+            name="First name"
+            placeholder="Enter first name"
+            required
+          />
+        </div>
+        <div>
+          <label>Last name</label>
+          <input
+            type="text"
+            name="Last name"
+            placeholder="Enter last name"
+            required
+          />
+        </div>
+        <div>
+          <label>E-mail address</label>
+          <input
+            type="text"
+            name="E-mail address"
+            placeholder="Enter address"
+            required
+          />
+        </div>
+        <div>
+          <label>Contact reason</label>
+          <select name="Contact reason" required>
+            <option value="option disabled" selected disabled hidden>
+              Choose contact reason
+            </option>
+            <option value="first option">I want to make a claim</option>
+            <option value="second option">
+              I want to realize a query or suggestion
+            </option>
+            <option value="third option">
+              I want to know the memberships and costs
+            </option>
+          </select>
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea
+            name="Description"
+            cols="40"
+            rows="5"
+            placeholder="Enter your message"
+            required>
+          </textarea>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
     </section>
   </body>
 </html>
