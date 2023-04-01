@@ -40,8 +40,8 @@ header{
 
 .down-list{
     position: relative;
-    right: 5px;
-    top: 470px;
+    left: 1px;
+    top: 407px;
     list-style: none;
 }
 
@@ -84,7 +84,7 @@ header{
     position: relative;
     margin-left: 65px;
     margin-right: 65px;
-    top: 445px;
+    top: 395px;
     text-align: center;
     border-bottom: 3px solid #fff;
     color: #fff;
@@ -102,6 +102,7 @@ header{
 .info-menu{
     position: relative;
     right: 13px;
+    margin-top: 23px;
     color: #373867;
     font-family: 'roboto', 'san-serif', 'arial';
     font-size: 20px;
@@ -109,8 +110,16 @@ header{
     font-style: normal;
 }
 
-.info-menu .img{
-    margin-left: 20px;
+.info-menu:nth-child(3){
+    position: relative;
+    right: 31px;
+    text-align: center;
+}
+
+
+.img-info{
+    position: relative;
+    margin-right: 13px;
 }
 
 
