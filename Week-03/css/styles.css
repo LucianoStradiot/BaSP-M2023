@@ -1,33 +1,124 @@
 body{
     overflow-x: hidden;
 }
+
 header{
-    background-color: #373867;
     position: sticky;
     top: 0;
     height: 98px;
+    background-color: #373867;
     z-index: 3;
 }
+
 #principal-logo{
     padding: 30px;
 }
 
 .container{
-    background-color: #AACE9B;
+    position: fixed;
     width: 313px;
     height: 915px;
-    position: fixed;
     top: 98px;
+    background-color: #AACE9B;
     z-index: 2;
 }
+
 .main{
     position: relative;
     left: 400px;
     z-index: 1;
+    font-family: 'roboto', 'san-serif', 'arial';
+    color: #373867;
+}
+
+.list{
+    position: relative;
+    right: 5px;
+    bottom: 3px;
+    list-style: none;
+}
+
+.down-list{
+    position: relative;
+    right: 5px;
+    top: 470px;
+    list-style: none;
+}
+
+.btn-nav{
+    position: relative;
+    width: 263px;
+    height: 37.69px;
+    margin: 16.4px;
+    right: 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.btn-menu{
+    display: block;
+    position: relative;
+    top: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #373867;
+    font-family: 'roboto', 'san-serif', 'arial';
+    font-size: 20px;
+    font-weight: 876;
+    font-style: normal;
+
+}
+
+#btn-info{
+    color: #373867;
+}
+
+.icon{
+    width: 18px;
+    height: 18px;
+    color: #373867;
+}
+
+#contact-info{
+    position: relative;
+    margin-left: 65px;
+    margin-right: 65px;
+    top: 445px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-family: 'roboto', 'san-serif', 'arial';
+    font-size: 20px;
+    font-weight: 876;
+    font-style: normal;
+}
+
+#home-icon{
+    width: 14px;
+    height: 15px;
+}
+
+.info-menu{
+    position: relative;
+    right: 13px;
+    color: #373867;
+    font-family: 'roboto', 'san-serif', 'arial';
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info-menu .img{
+    margin-left: 20px;
 }
 
 
 
+@font-face {
+    font-family: 'roboto';
+    src: url(https://fonts.google.com/specimen/Roboto);
+}
 
 
 
