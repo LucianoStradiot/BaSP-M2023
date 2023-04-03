@@ -1,8 +1,8 @@
-body{
+body {
     overflow-x: hidden;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     width: 1512px;
@@ -11,11 +11,11 @@ header{
     z-index: 3;
 }
 
-#principal-logo{
+#principal-logo {
     padding: 30px;
 }
 
-.container{
+.container {
     position: fixed;
     width: 313px;
     height: 915px;
@@ -24,14 +24,14 @@ header{
     z-index: 2;
 }
 
-.list{
+.list {
     position: relative;
     left: 32px;
     bottom: 3px;
     list-style: none;
 }
 
-.down-list{
+.down-list {
     position: relative;
     width: 250px;
     left: 43px;
@@ -39,7 +39,7 @@ header{
     list-style: none;
 }
 
-.btn-nav{
+.btn-nav {
     position: relative;
     width: 263px;
     height: 37.69px;
@@ -50,7 +50,7 @@ header{
     background-color: #fff;
 }
 
-.btn-menu{
+.btn-menu {
     display: block;
     position: relative;
     top: 8px;
@@ -64,17 +64,17 @@ header{
 
 }
 
-#btn-info{
+#btn-info {
     color: #373867;
 }
 
-.icon{
+.icon {
     width: 18px;
     height: 18px;
     color: #373867;
 }
 
-#contact-info{
+#contact-info {
     position: relative;
     margin-left: 65px;
     margin-right: 65px;
@@ -88,12 +88,12 @@ header{
     font-style: normal;
 }
 
-#home-icon{
+#home-icon {
     width: 14px;
     height: 15px;
 }
 
-.info-menu{
+.info-menu {
     position: relative;
     right: 13px;
     margin-top: 23px;
@@ -104,19 +104,19 @@ header{
     font-style: normal;
 }
 
-.info-menu:nth-child(3){
+.info-menu:nth-child(3) {
     position: relative;
     right: 19px;
     text-align: center;
 }
 
 
-.img-info{
+.img-info {
     position: relative;
     margin-right: 13px;
 }
 
-.main{
+.main {
     position: relative;
     display: block;
     margin-left: 380px;
@@ -125,7 +125,7 @@ header{
     color: #373867;
 }
 
-.main-block{
+.main-block {
     position: relative;
     display: block;
     width: 488px;
@@ -134,12 +134,12 @@ header{
     float: left;
 }
 
-h1{
+h1 {
     font-size: 40px;
     font-weight: 700;
 }
 
-#subtitle{
+#subtitle {
     position: relative;
     top: 5px;
     font-size: 20px;
@@ -147,7 +147,7 @@ h1{
     color: #49A37B;
 }
 
-#principal-paragraph{
+#principal-paragraph {
     position: relative;
     top: 50px;
     height: 81px;
@@ -155,19 +155,19 @@ h1{
     font-weight: 400;
 }
 
-.main-photo{
+.main-photo {
     position: relative;
     top: 161px;
     left: 76px;
 }
 
-#section-1{
+#section-1 {
     position: relative;
     display: block;
     top: 235px;
 }
 
-.section-title{
+.section-title {
     position: relative;
     text-align: center;
     text-decoration: underline;
@@ -178,7 +178,7 @@ h1{
     font-weight: 700;
 }
 
-.features-article{
+.features-article {
     position: relative;
     display: inline-block;
     top: 50px;
@@ -186,13 +186,13 @@ h1{
     margin-left: 55px;
 }
 
-.features-title{
+.features-title {
     position: relative;
     font-size: 24px;
     font-weight: 876;
 }
 
-.features-icon{
+.features-icon {
     position: relative;
     top: 8px;
     width: 43px;
@@ -200,7 +200,7 @@ h1{
     margin-right: 10px;
 }
 
-.features-article p{
+.features-article p {
     position: relative;
     width: 337px;
     height: 115px;
@@ -208,21 +208,19 @@ h1{
     left: 60px;
 }
 
-#section-2{
+#section-2 {
     position: relative;
     display: block;
     top: 370px;
 }
 
-#section-2 div{
-
+#section-2 div   {
     position: relative;
     top: 50px;
     margin-left: 10px;
 }
 
-#section-2 #img-left{
-
+#section-2 #img-left {
     position: relative;
     width: 453px;
     height: 248px;
@@ -230,16 +228,14 @@ h1{
     float: left;
 }
 
-#section-2 .about-to-article-1{
-
+#section-2 .about-to-article-1 {
     position: relative;
     text-align: right;
     margin-right: 69px;
     top: 42px;
 }
 
-#section-2 #img-right{
-
+#section-2 #img-right {
     position: relative;
     width: 453px;
     height: 248px;
@@ -248,8 +244,7 @@ h1{
     margin-right: 62px;
 }
 
-#section-2 .about-to-article-2{
-
+#section-2 .about-to-article-2 {
     position: relative;
     left: 15px;
     top: 96px;
@@ -258,32 +253,100 @@ h1{
     clear: left;
 }
 
-form{
-
+form {
     position: relative;
     display: block;
-    top: 370px;
+    top: 420px;
     clear: right;
 }
 
-
-#activities-list{
+#form .block-1-form {
     position: relative;
     display: block;
-    top: 370px;
-    
+    top: 40px;
+    margin-left: 91px;
+    float: left;
 }
 
-table{
-    position: relative;
+#form .label-form {
     display: block;
-    top: 370px;
+    padding: 10px 0px 10px;
+    position: relative;
+    top: 2px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-footer{
+.block-2-form {
     position: relative;
     display: block;
-    top: 370px;
+    top: 58px;
+    left: 85px;
+}
+
+#form .label-form-2 {
+    display: block;
+    padding: 10px 0px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input, select, textarea, option {
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid #373867;
+    width: 260px;
+}
+
+select {
+    width: 590px;
+}
+.message-block {
+    position: relative;
+    top: 11px;
+}
+
+textarea {
+    width: 566px;
+    height: 191.6px;
+}
+
+#submit {
+    position: relative;
+    display: block;
+    top: 15px;
+    margin-top: 10px;
+    width: 123px;
+    border: none;
+    color: #373867;
+    background-color: #AACE9B;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'roboto';
+}
+
+#activities-list {
+    position: relative;
+    display: block;
+    top: 552px;
+    clear: left;
+}
+
+#activities-list li {
+    list-style: inside;
+}
+
+table {
+    position: relative;
+    display: block;
+    top: 600px;
+}
+
+footer {
+    position: relative;
+    display: block;
+    top: 620px;
 }
 
 @font-face {

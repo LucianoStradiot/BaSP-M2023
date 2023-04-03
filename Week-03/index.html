@@ -144,55 +144,50 @@
               </div>
           </section>
             <form id="form">
-              <div>
               <h2 class="section-title">
                 Get in Touch
               </h2>
-                <div>
-                  <label for="First name">
+                <div class="block-1-form">
+                  <label for="First-name" class="label-form">
                     First name
                   </label>
-                    <input id="First name" type="text" name="First name" placeholder="Enter first name" required/>
-                </div>
-                <div>
-                  <label for="Last name">
+                    <input id="First-name" type="text" name="First-name" placeholder="Enter-first-name" required/>
+                  <label for="Last name" class="label-form">
                     Last name
                   </label>
-                    <input id="Last name" type="text" name="Last name" placeholder="Enter last name" required/>
-                </div>
-                <div>
-                  <label for="E-mail address">
+                    <input id="Last-name" type="text" name="Last-name" placeholder="Enter-last-name" required/>
+                  <label for="E-mail-address" class="label-form">
                     E-mail address
                   </label>
-                    <input id="E-mail address" type="text" name="E-mail address" placeholder="Enter address" required/>
+                    <input id="E-mail-address" type="text" name="E-mail-address" placeholder="Enter-address" required/>
+                    <input id="submit" type="submit" value="Submit"/>
                 </div>
-              <div>
-                <label for="Contact reason">
-                  Contact reason
-                </label>
-                  <select id="Choose contact reason" name="Choose contact reason" required>
-                    <option id="Choose contact reason" value="Choose contact reason" selected disabled hidden>
-                      Choose contact reason
-                    </option>
-                    <option id="I want to make a claim" value="I want to make a claim">
-                      I want to make a claim
-                    </option>
-                    <option id="I want to realize a query or suggestion" value="I want to realize a query or suggestion">
-                      I want to realize a query or suggestion
-                    </option>
-                    <option id="I want to know the memberships and costs" value="I want to know the memberships and costs">
-                      I want to know the memberships and costs
-                    </option>
-                  </select>
-              </div>
-              <div>
-                <label for="Message">
-                  Message
-                </label>
-                  <textarea id="Message" name="Description" cols="40" rows="5" placeholder="Enter your message" required>
-                  </textarea>
-              </div>
-                <input id="submit" type="submit" value="Submit" />
+                <div class="block-2-form">
+                  <label for="Contact-reason" class="label-form-2">
+                    Contact reason
+                  </label>
+                    <select id="choose-contact-reason" name="choose-contact-reason" required class="label-form-2">
+                      <option id="choose-contact-reason" value="choose-contact-reason" selected disabled hidden>
+                        Choose contact reason
+                      </option>
+                      <option id="I-want-to-make-a-claim" value="I-want-to-make-a-claim">
+                        I want to make a claim
+                      </option>
+                      <option id="I-want-to-realize-a-query-or-suggestion" value="I-want-to-realize-a-query-or-suggestion">
+                        I want to realize a query or suggestion
+                      </option>
+                      <option id="I-want-to-know-the-memberships-and-costs" value="I-want-to-know-the-memberships-and-costs">
+                        I want to know the memberships and costs
+                      </option>
+                    </select>
+                    <div class="message-block">
+                      <label for="Message" class="label-form-2">
+                        Message
+                      </label>
+                        <textarea id="Message" name="Description" cols="40" rows="5" placeholder="Enter-your-message" required>
+                        </textarea>
+                    </div>
+                </div>
             </form>
             <div id="activities-list">
               <h2 class="section-title">
