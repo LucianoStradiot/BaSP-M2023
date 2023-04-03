@@ -144,7 +144,7 @@ h1{
     top: 5px;
     font-size: 20px;
     font-weight: 400;
-    color: #AACE9B;
+    color: #49A37B;
 }
 
 #principal-paragraph{
@@ -161,7 +161,7 @@ h1{
     left: 76px;
 }
 
-section{
+#section-1{
     position: relative;
     display: block;
     top: 235px;
@@ -169,10 +169,11 @@ section{
 
 .section-title{
     position: relative;
-    display: block;
-    width: 118px;
-    left: 477px;
-    border-bottom: 3px solid #AACE9B;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #49A37B;
+    text-underline-offset: 6px;
     font-size: 30px;
     font-weight: 700;
 }
@@ -181,8 +182,8 @@ section{
     position: relative;
     display: inline-block;
     top: 50px;
-    width: 485px;
-    margin-left: 63px;
+    width: 508px;
+    margin-left: 55px;
 }
 
 .features-title{
@@ -207,8 +208,83 @@ section{
     left: 60px;
 }
 
+#section-2{
+    position: relative;
+    display: block;
+    top: 370px;
+}
+
+#section-2 div{
+
+    position: relative;
+    top: 50px;
+    margin-left: 10px;
+}
+
+#section-2 #img-left{
+
+    position: relative;
+    width: 453px;
+    height: 248px;
+    left: 20px;
+    float: left;
+}
+
+#section-2 .about-to-article-1{
+
+    position: relative;
+    text-align: right;
+    margin-right: 69px;
+    top: 42px;
+}
+
+#section-2 #img-right{
+
+    position: relative;
+    width: 453px;
+    height: 248px;
+    float: right;
+    bottom: 73px;
+    margin-right: 62px;
+}
+
+#section-2 .about-to-article-2{
+
+    position: relative;
+    left: 15px;
+    top: 96px;
+    margin-right: 548px;
+    text-align: left;
+    clear: left;
+}
+
+form{
+
+    position: relative;
+    display: block;
+    top: 370px;
+    clear: right;
+}
 
 
+#activities-list{
+    position: relative;
+    display: block;
+    top: 370px;
+    
+}
+
+table{
+    position: relative;
+    display: block;
+    top: 370px;
+}
+
+footer{
+    position: relative;
+    display: block;
+    top: 370px;
+}
 
 @font-face {
     font-family: 'roboto';
