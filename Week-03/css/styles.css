@@ -1,10 +1,13 @@
+/* General container */
+
 body {
     width: 1512px;
     height: 982px;
-    overflow-x: hidden;
     font-family: 'roboto';
     src: url(https://fonts.google.com/specimen/Roboto);
 }
+
+/* Header */
 
 header {
     position: fixed;
@@ -19,6 +22,8 @@ header {
     padding: 30px;
 }
 
+/* Sidebar */
+
 .container {
     position: fixed;
     width: 313px;
@@ -32,7 +37,6 @@ header {
     position: relative;
     left: 32px;
     bottom: 3px;
-    list-style: none;
 }
 
 .down-list {
@@ -40,23 +44,22 @@ header {
     width: 250px;
     left: 43px;
     top: 455px;
-    list-style: none;
 }
 
 .btn-nav {
     position: relative;
     width: 263px;
     height: 38px;
-    margin: 16px;
     right: 25px;
+    margin: 16px;
     border: 1px solid #000;
     border-radius: 5px;
     background-color: #fff;
 }
 
 .btn-menu {
-    display: block;
     position: relative;
+    display: block;
     top: 8px;
     text-align: center;
     text-decoration: none;
@@ -78,11 +81,13 @@ header {
     color: #373867;
 }
 
+/* Information contact of the Sidebar */
+
 #contact-info {
     position: relative;
+    top: 425px;
     margin-left: 65px;
     margin-right: 65px;
-    top: 425px;
     text-align: center;
     border-bottom: 3px solid #fff;
     color: #fff;
@@ -120,13 +125,15 @@ header {
     margin-right: 13px;
 }
 
-.main {
+/* First section of the Main */
+
+main {
     position: relative;
     display: block;
     margin-left: 380px;
-    z-index: 1;
     font-family: 'roboto', 'san-serif', 'arial';
     color: #373867;
+    z-index: 1;
 }
 
 .main-block {
@@ -165,6 +172,8 @@ h1 {
     left: 76px;
 }
 
+/* Features section */
+
 .section-1 {
     position: relative;
     display: block;
@@ -191,7 +200,6 @@ h1 {
 }
 
 .features-title {
-    position: relative;
     font-size: 24px;
     font-weight: 876;
 }
@@ -212,6 +220,8 @@ h1 {
     left: 60px;
 }
 
+/* About to section */
+
 .section-2 {
     position: relative;
     display: block;
@@ -219,6 +229,8 @@ h1 {
     font-size: 20px;
     font-weight: 400;
 }
+
+/* Compound selectors of the About to section */
 
 .section-2 div {
     position: relative;
@@ -236,19 +248,19 @@ h1 {
 
 .section-2 .about-to-article-1 {
     position: relative;
-    text-align: right;
     margin-right: 130px;
     left: 58px;
     top: 42px;
+    text-align: right;
 }
 
 .section-2 #img-right {
     position: relative;
     width: 453px;
     height: 248px;
-    float: right;
     bottom: 73px;
     margin-right: 62px;
+    float: right;
 }
 
 .section-2 .about-to-article-2 {
@@ -260,6 +272,8 @@ h1 {
     clear: left;
 }
 
+/* Form section */
+
 form {
     position: relative;
     display: block;
@@ -267,7 +281,21 @@ form {
     clear: right;
 }
 
-#form .block-1-form {
+input, select, textarea, option {
+    width: 260px;
+    padding: 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+select {
+    width: 590px;
+}
+
+/* Compound selectors of the Form section */
+    /* First block of the Form section */
+
+form .block-1-form {
     position: relative;
     display: block;
     top: 40px;
@@ -276,15 +304,17 @@ form {
     z-index: 3;
 }
 
-#form .label-form {
+form .label-form {
+    position: relative;
     display: block;
     padding: 10px 0px 10px;
-    position: relative;
     top: 2px;
     margin-top: 20px;
     font-size: 14px;
     font-weight: 500;
 }
+
+    /* Second block of the Form section */
 
 .block-2-form {
     position: relative;
@@ -293,22 +323,11 @@ form {
     left: 85px;
 }
 
-#form .label-form-2 {
+form .label-form-2 {
     display: block;
     padding: 10px 0px 10px;
     font-size: 14px;
     font-weight: 500;
-}
-
-input, select, textarea, option {
-    padding: 10px 12px;
-    border-radius: 4px;
-    border: 1px solid #373867;
-    width: 260px;
-}
-
-select {
-    width: 590px;
 }
 
 .message-block {
@@ -324,16 +343,18 @@ textarea {
 #submit {
     position: relative;
     display: block;
+    width: 123px;
     top: 15px;
     margin-top: 10px;
-    width: 123px;
     border: none;
-    color: #373867;
     background-color: #AACE9B;
+    color: #373867;
     font-size: 16px;
     font-weight: 500;
     font-family: 'roboto';
 }
+
+/* Activities section */
 
 .activities-list {
     position: relative;
@@ -342,14 +363,16 @@ textarea {
     clear: left;
 }
 
+/* Compound selectors of the Activities section */
+
 .activities-list ul {
     position: relative;
     margin-left: 80px;
     margin-top: 80px;
-    float: left;
     list-style: inside;
     font-size: 24px;
     font-weight: 876;
+    float: left;
 }
 
 .activities-list li {
@@ -363,6 +386,8 @@ textarea {
     margin-left: 170px;
     margin-top: 60px;
 }
+
+/* Table section */
 
 table {
     position: relative;
@@ -378,9 +403,11 @@ tbody{
     top: 72px;
 }
 
+/* Compound selectors of the Table section */
+
 .membership-table-grey {
-    background-color: #D9D9D9;
     height: 59px;
+    background-color: #D9D9D9;
     text-align: center;
 }
 
@@ -395,8 +422,8 @@ tbody{
 }
 
 .membership-table-white {
-    background-color: #fff;
     height: 59px;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -411,20 +438,18 @@ footer {
     background-color: #AACE9B;
 }
 
-/* Compound selectors for the footer */
+/* Compound selectors of the Footer */
 
 footer p {
     text-align: center;
 }
 
-/* Footer classes */
-
 .social-btns {
     position: relative;
-    text-align: center;
-    margin-bottom: 5px;
     top: 9px;
+    margin-bottom: 5px;
     color: #fff;
+    text-align: center;
     font-size: 14px;
     font-weight: 700;
     font-family: 'roboto';
