@@ -1,4 +1,6 @@
 body {
+    width: 1512px;
+    height: 982px;
     overflow-x: hidden;
     font-family: 'roboto';
     src: url(https://fonts.google.com/specimen/Roboto);
@@ -214,6 +216,8 @@ h1 {
     position: relative;
     display: block;
     top: 370px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .section-2 div {
@@ -233,7 +237,8 @@ h1 {
 .section-2 .about-to-article-1 {
     position: relative;
     text-align: right;
-    margin-right: 69px;
+    margin-right: 130px;
+    left: 58px;
     top: 42px;
 }
 
@@ -248,7 +253,7 @@ h1 {
 
 .section-2 .about-to-article-2 {
     position: relative;
-    left: 15px;
+    left: 28px;
     top: 96px;
     margin-right: 548px;
     text-align: left;
@@ -268,6 +273,7 @@ form {
     top: 40px;
     margin-left: 91px;
     float: left;
+    z-index: 3;
 }
 
 #form .label-form {
@@ -365,13 +371,11 @@ table {
     left: 66px;
     font-size: 14px;
     font-weight: 600;
-    border-collapse: collapse;
 }
 
 tbody{
     position: relative;
     top: 72px;
-    border-collapse: collapse;
 }
 
 .membership-table-grey {
@@ -396,19 +400,40 @@ tbody{
     text-align: center;
 }
 
+/* Footer */
+
 footer {
     position: relative;
-    top: 820px;
-    width: 1510px;
+    top: 737px;
+    left: 312px;
+    width: 1210px;
     height: 72px;
     background-color: #AACE9B;
 }
 
-.social-btns {
-    position: relative;
+/* Compound selectors for the footer */
+
+footer p {
     text-align: center;
 }
 
+/* Footer classes */
 
+.social-btns {
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+    top: 9px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'roboto';
+}
+
+.social-btns-1 {
+    display: inline-block;
+    width: 42px;
+    padding-bottom: 5px;
+}
 
 
