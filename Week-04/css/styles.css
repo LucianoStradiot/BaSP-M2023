@@ -1,0 +1,481 @@
+
+body {
+    font-family: 'roboto';
+    src: url(https://fonts.google.com/specimen/Roboto);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*                 General container
+
+body {
+    width: 1512px;
+    height: 982px;
+    font-family: 'roboto';
+    src: url(https://fonts.google.com/specimen/Roboto);
+}
+
+                    Header
+
+header {
+    position: fixed;
+    top: 0;
+    width: 1512px;
+    height: 98px;
+    background-color: #373867;
+    z-index: 3;
+}
+
+#principal-logo {
+    padding: 30px;
+}
+
+                    Sidebar
+
+.container {
+    position: fixed;
+    width: 313px;
+    height: 100%;
+    top: 98px;
+    background-color: #AACE9B;
+    z-index: 2;
+}
+
+.list {
+    position: relative;
+    left: 32px;
+    bottom: 3px;
+}
+
+.down-list {
+    position: relative;
+    width: 250px;
+    left: 43px;
+    top: 455px;
+}
+
+.btn-nav {
+    position: relative;
+    width: 263px;
+    height: 38px;
+    right: 25px;
+    margin: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.btn-menu {
+    position: relative;
+    display: block;
+    top: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #373867;
+    font-family: 'roboto', 'san-serif', 'arial';
+    font-size: 20px;
+    font-weight: 876;
+    font-style: normal;
+
+}
+
+#btn-info {
+    color: #373867;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    color: #373867;
+}
+
+                Information contact of the Sidebar
+
+#contact-info {
+    position: relative;
+    top: 425px;
+    margin-left: 65px;
+    margin-right: 65px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-family: 'roboto', 'san-serif', 'arial';
+    font-size: 20px;
+    font-weight: 876;
+    font-style: normal;
+}
+
+#home-icon {
+    width: 14px;
+    height: 15px;
+}
+
+.info-menu {
+    position: relative;
+    right: 13px;
+    margin-top: 23px;
+    color: #373867;
+    font-family: 'roboto', 'san-serif', 'arial';
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info-menu:nth-child(3) {
+    position: relative;
+    right: 19px;
+    text-align: center;
+}
+
+
+.img-info {
+    position: relative;
+    margin-right: 13px;
+}
+
+                    First section of the Main
+
+main {
+    position: relative;
+    display: block;
+    margin-left: 380px;
+    font-family: 'roboto', 'san-serif', 'arial';
+    color: #373867;
+    z-index: 1;
+}
+
+.main-block {
+    position: relative;
+    display: block;
+    width: 488px;
+    top: 223px;
+    text-align: center;
+    float: left;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#subtitle {
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #49A37B;
+}
+
+#principal-paragraph {
+    position: relative;
+    top: 50px;
+    height: 81px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main-photo {
+    position: relative;
+    top: 161px;
+    left: 76px;
+}
+
+                    Features section
+
+.section-1 {
+    position: relative;
+    display: block;
+    top: 235px;
+}
+
+.section-title {
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #49A37B;
+    text-underline-offset: 6px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.features-article {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    width: 508px;
+    margin-left: 55px;
+}
+
+.features-title {
+    font-size: 24px;
+    font-weight: 876;
+}
+
+.features-icon {
+    position: relative;
+    top: 8px;
+    width: 43px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+.features-article p {
+    position: relative;
+    width: 337px;
+    height: 115px;
+    top: 30px;
+    left: 60px;
+}
+
+                About to section
+
+.section-2 {
+    position: relative;
+    display: block;
+    top: 370px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+                    Compound selectors of the About to section
+
+.section-2 div {
+    position: relative;
+    top: 50px;
+    margin-left: 10px;
+}
+
+.section-2 #img-left {
+    position: relative;
+    width: 453px;
+    height: 248px;
+    left: 20px;
+    float: left;
+}
+
+.section-2 .about-to-article-1 {
+    position: relative;
+    margin-right: 130px;
+    left: 58px;
+    top: 42px;
+    text-align: right;
+}
+
+.section-2 #img-right {
+    position: relative;
+    width: 453px;
+    height: 248px;
+    bottom: 73px;
+    margin-right: 62px;
+    float: right;
+}
+
+.section-2 .about-to-article-2 {
+    position: relative;
+    left: 28px;
+    top: 96px;
+    margin-right: 548px;
+    text-align: left;
+    clear: left;
+}
+
+                Form section
+
+form {
+    position: relative;
+    display: block;
+    top: 420px;
+    clear: right;
+}
+
+input, select, textarea, option {
+    width: 260px;
+    padding: 10px 12px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+select {
+    width: 590px;
+}
+
+            Compound selectors of the Form section
+                        First block of the Form section
+
+form .block-1-form {
+    position: relative;
+    display: block;
+    top: 40px;
+    margin-left: 91px;
+    float: left;
+    z-index: 3;
+}
+
+form .label-form {
+    position: relative;
+    display: block;
+    padding: 10px 0px 10px;
+    top: 2px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+            Second block of the Form section
+
+.block-2-form {
+    position: relative;
+    display: block;
+    top: 58px;
+    left: 85px;
+}
+
+form .label-form-2 {
+    display: block;
+    padding: 10px 0px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.message-block {
+    position: relative;
+    top: 11px;
+}
+
+textarea {
+    width: 566px;
+    height: 191.6px;
+}
+
+#submit {
+    position: relative;
+    display: block;
+    width: 123px;
+    top: 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: #AACE9B;
+    color: #373867;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'roboto';
+}
+
+                Activities section
+
+.activities-list {
+    position: relative;
+    display: block;
+    top: 552px;
+    clear: left;
+}
+
+                Compound selectors of the Activities section
+
+.activities-list ul {
+    position: relative;
+    margin-left: 80px;
+    margin-top: 80px;
+    list-style: inside;
+    font-size: 24px;
+    font-weight: 876;
+    float: left;
+}
+
+.activities-list li {
+    padding: 10px;
+}
+
+.activities-list img {
+    position: relative;
+    width: 636px;
+    height: 245px;
+    margin-left: 170px;
+    margin-top: 60px;
+}
+
+            Table section
+
+table {
+    position: relative;
+    display: block;
+    top: 600px;
+    left: 66px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+tbody{
+    position: relative;
+    top: 72px;
+}
+
+                Compound selectors of the Table section
+
+.membership-table-grey {
+    height: 59px;
+    background-color: #D9D9D9;
+    text-align: center;
+}
+
+.membership-column {
+    width: 400px;
+    vertical-align: middle;
+}
+
+.membership-column-2 {
+    width: 200px;
+    vertical-align: middle;
+}
+
+.membership-table-white {
+    height: 59px;
+    background-color: #fff;
+    text-align: center;
+}
+
+                Footer
+
+footer {
+    position: relative;
+    top: 737px;
+    left: 312px;
+    width: 1210px;
+    height: 72px;
+    background-color: #AACE9B;
+}
+
+               Compound selectors of the Footer
+
+footer p {
+    text-align: center;
+}
+
+.social-btns {
+    position: relative;
+    top: 9px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'roboto';
+}
+
+.social-btns-1 {
+    display: inline-block;
+    width: 42px;
+    padding-bottom: 5px;
+}
+
+
+ */
