@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #373867;
+    z-index: 3;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+}
+
+#principal-logo {
+    padding: 30px 13px;
+    width: 154px;
+    height: 33px;
+}
+
+#hamburguer-icon {
+    padding: 30px;
+    cursor: pointer;
+}
+

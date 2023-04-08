@@ -1,0 +1,33 @@
+/* Footer */
+
+footer {
+    position: relative;
+    top: 737px;
+    left: 312px;
+    width: 1210px;
+    height: 72px;
+    background-color: #AACE9B;
+}
+
+    /* Compound selectors of the Footer */
+
+footer p {
+    text-align: center;
+}
+
+.social-btns {
+    position: relative;
+    top: 9px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'roboto';
+}
+
+.social-btns-1 {
+    display: inline-block;
+    width: 42px;
+    padding-bottom: 5px;
+}
