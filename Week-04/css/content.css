@@ -47,7 +47,7 @@ h1 {
 
 .section-title {
     position: relative;
-    padding: 25px 0px;
+    padding: 20px 0px;
     text-align: center;
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -99,6 +99,9 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .section-2 #img-left {
@@ -107,56 +110,66 @@ h1 {
 }
 
 .section-2 .about-to-article-1 {
+    width: 279px;
+    padding: 15px 0px;
     text-align: center;
 }
 
 .section-2 #img-right {
-    width: 284px;
+    width: 279px;
     height: 174px;
 }
 
 .section-2 .about-to-article-2 {
+    width: 279px;
+    padding: 15px 0px;
     text-align: center;
 }
 
-Form section
+.btn-learn-more {
+    padding: 10px 15px;
+    margin: 10px 0px;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #373867;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'roboto';
+}
+
+/* Form section */
 
 form {
-    position: relative;
-    display: block;
-    top: 420px;
-    clear: right;
+    display: flex;
+    flex-direction: column;
 }
 
 input, select, textarea, option {
-    width: 260px;
+    width: 329px;
     padding: 10px 12px;
-    border: 1px solid #373867;
+    border: 2px solid #373867;
     border-radius: 4px;
 }
 
 select {
-    width: 590px;
+    width: 357px;
+}
+
+textarea {
+    height: 191.6px;
 }
 
 /* Compound selectors of the Form section */
     /* First block of the Form section */
 
 form .block-1-form {
-    position: relative;
-    display: block;
-    top: 40px;
-    margin-left: 91px;
-    float: left;
-    z-index: 3;
+    display: flex;
+    flex-direction: column;
 }
 
 form .label-form {
-    position: relative;
-    display: block;
     padding: 10px 0px 10px;
-    top: 2px;
-    margin-top: 20px;
     font-size: 14px;
     font-weight: 500;
 }
@@ -164,10 +177,8 @@ form .label-form {
     /* Second block of the Form section */
 
 .block-2-form {
-    position: relative;
-    display: block;
-    top: 58px;
-    left: 85px;
+    display: flex;
+    flex-direction: column;
 }
 
 form .label-form-2 {
@@ -177,21 +188,11 @@ form .label-form-2 {
     font-weight: 500;
 }
 
-.message-block {
-    position: relative;
-    top: 11px;
-}
-
-textarea {
-    width: 566px;
-    height: 191.6px;
-}
-
 #submit {
-    position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-self: end;
     width: 123px;
-    top: 15px;
     margin-top: 10px;
     border: none;
     background-color: #AACE9B;
@@ -204,22 +205,33 @@ textarea {
 /* Activities section */
 
 .activities-list {
-    position: relative;
-    display: block;
-    top: 552px;
-    clear: left;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
 
 
 /* Compound selectors of the Activities section */
 
 .activities-list ul {
-    font-size: 24px;
-    font-weight: 876;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
 }
 
 .activities-list li {
     padding: 10px;
+    width: 90px;
+}
+
+
+.activities-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
 .activities-list img {
@@ -232,18 +244,17 @@ textarea {
 table {
     position: relative;
     display: block;
-    top: 600px;
-    left: 66px;
+    padding: 10px 0;
     font-size: 14px;
     font-weight: 600;
 }
 
 tbody{
     position: relative;
-    top: 72px;
+    padding: 10px;
 }
 
-    /* Compound selectors of the Table section */
+/* Compound selectors of the Table section */
 
 .membership-table-grey {
     height: 59px;
