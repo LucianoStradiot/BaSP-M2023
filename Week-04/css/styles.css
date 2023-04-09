@@ -5,6 +5,63 @@ body {
     color: #373867;
 }
 
+/* Main */
+
+main {
+    position: relative;
+    display: flex;
+    padding: 92px 0 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px ;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+/* Form section */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+input, select, textarea, option {
+    width: 92%;
+    padding: 10px 12px;
+    border: 2px solid #373867;
+    border-radius: 4px;
+}
+
+select {
+    width: auto;
+}
+
+textarea {
+    height: 191.6px;
+}
+
+/* Table section */
+
+table {
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+tbody{
+    position: relative;
+    padding: 10px;
+}
+
 
 
 
