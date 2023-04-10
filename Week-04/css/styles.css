@@ -18,7 +18,7 @@ main {
     padding: 92px 0 20px;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
+    margin: 20px;
     z-index: 1;
 }
 
@@ -44,25 +44,36 @@ input, select, textarea, option {
     border-radius: 4px;
 }
 
+select {
+    width: 98%;
+}
+
 textarea {
-    height: 191.6px;
+    height: 191px;
+    width: 93%;
 }
 
 /* Table section */
 
 table {
-    position: relative;
-    display: block;
     padding: 10px 0;
     font-size: 14px;
     font-weight: 600;
 }
 
 tbody{
-    position: relative;
     padding: 10px;
 }
 
+@media (min-width: 1025px) {
+
+    /* Main */
+
+    main {
+        margin: 37px;
+        margin-left: 348px;
+    }
+}
 
 
 

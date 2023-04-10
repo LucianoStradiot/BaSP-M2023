@@ -18,24 +18,13 @@
     }
 
     .list {
-        position: relative;
-        left: 32px;
-        bottom: 3px;
-    }
-
-    .down-list {
-        position: relative;
-        width: 250px;
-        left: 43px;
-        top: 455px;
+        padding: 0 31px;
     }
 
     .btn-nav {
-        position: relative;
-        width: 263px;
+        padding: 3px 0;
         height: 38px;
-        right: 25px;
-        margin: 16px;
+        margin: 17px 0;
         border: 1px solid #000;
         border-radius: 5px;
         background-color: #fff;
@@ -48,37 +37,31 @@
         text-align: center;
         text-decoration: none;
         color: #373867;
-        font-family: 'roboto', 'san-serif', 'arial';
         font-size: 20px;
         font-weight: 876;
-        font-style: normal;
-
-    }
-
-    #btn-info {
-        color: #373867;
-    }
-
-    .icon {
-        width: 18px;
-        height: 18px;
-        color: #373867;
     }
 
         /* Information contact of the Sidebar */
 
     #contact-info {
-        position: relative;
-        top: 425px;
-        margin-left: 65px;
-        margin-right: 65px;
+        display: block;
+        text-align: start;
+        padding-top: 360px;
+    }
+
+    #contact-info .list {
+        padding-top: 25px;
+    }
+
+    #contact-info h2 {
         text-align: center;
-        border-bottom: 3px solid #fff;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: #fff;
+        text-underline-offset: 6px;
         color: #fff;
-        font-family: 'roboto', 'san-serif', 'arial';
         font-size: 20px;
         font-weight: 876;
-        font-style: normal;
     }
 
     #home-icon {
@@ -86,32 +69,18 @@
         height: 15px;
     }
 
-    .info-menu {
-        position: relative;
-        right: 13px;
-        margin-top: 23px;
+    #btn-info {
         color: #373867;
-        font-family: 'roboto', 'san-serif', 'arial';
+    }
+
+    .info-menu {
+        margin-top: 23px;
         font-size: 20px;
         font-weight: 400;
-        font-style: normal;
     }
-
-    .info-menu:nth-child(3) {
-        position: relative;
-        right: 19px;
-        text-align: center;
-    }
-
 
     .img-info {
-        position: relative;
         margin-right: 13px;
     }
 
-    /* Main */
-
-    main {
-        margin-left: 348px;
-    }
 }

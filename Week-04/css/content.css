@@ -1,8 +1,6 @@
 /* First section of the Main */
 
 .main-block {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     margin: 10px 0px 20px;
 }
@@ -19,26 +17,18 @@
 
 .main-photo {
     display: flex;
-    height: 50%;
     justify-content: end;
 }
 
 .main-photo img {
-    display: flex;
-    flex-direction: column;
-    width: 125%;
-    height: 192px;
+    width: 100%;
+    height: 200px;
 }
 
 /* Features section */
 
-.section-1 {
-    display: flex;
-    flex-direction: column;
-}
-
 .section-title {
-    position: relative;
+
     padding: 20px 0px;
     text-align: center;
     text-decoration: underline;
@@ -141,7 +131,7 @@ form .label-form {
 
         /* Second block of the Form section */
 
-#submit {
+#submit-general {
     display: flex;
     justify-content: center;
     align-self: end;
@@ -153,6 +143,10 @@ form .label-form {
     font-size: 16px;
     font-weight: 500;
     font-family: 'roboto';
+}
+
+#submit-tablet {
+    display: none;
 }
 
 /* Activities section */
@@ -176,6 +170,7 @@ form .label-form {
 .activities-list li {
     padding: 10px;
     width: 90px;
+    font-size: 14px;
 }
 
 .activities-block {
@@ -284,12 +279,48 @@ form .label-form {
 
         form {
             width: 100%;
-           
         }
 
         form div {
             display: flex;
-           
+            justify-content: space-between;
+            width: 90%;
+            padding: 0 6%;
+        }
+
+        form .block-form {
+            display: flex;
+            justify-content: start;
+            width: 90%;
+            padding: 20px;
+        }
+
+        form .block-form:nth-child(2) {
+            display: flex;
+            justify-content: start;
+            width: 90%;
+        }
+
+        #submit-general {
+            display: none;
+        }
+
+        #submit-tablet {
+            display: flex;
+            justify-content: center;
+            align-self: flex-start;
+            width: 60%;
+            margin-top: 22px;
+            border: none;
+            background-color: #AACE9B;
+            color: #373867;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'roboto';
+        }
+
+        textarea {
+            height: 145px;
         }
 
         .activities-list div {
@@ -305,11 +336,17 @@ form .label-form {
         .activities-block {
             flex-direction: column;
             padding: 0 0 0 10%;
+
+        }
+
+        .activities-list li {
+            width: 146px;
+            font-size: 24px;
             list-style: inside;
         }
 
         .activities-list img {
-            width: 80%;
+            width: 85%;
             height: 100%;
         }
     }
@@ -317,5 +354,57 @@ form .label-form {
     @media (min-width: 1025px) {
         #block {
             display: flex;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        form div {
+            display: flex;
+            align-self: center;
+        }
+
+        form .block-form {
+            display: flex;
+            justify-content: start;
+            width: 50%;
+            padding-left: 4%;
+            padding-right: 8%;
+        }
+
+        form .block-form:nth-child(2) {
+            display: flex;
+            justify-content: start;
+            align-self: auto;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 40px;
+        }
+
+        form .label-form {
+            padding: 26px 0px 10px;
+        }
+
+        #submit-general {
+            display: none;
+        }
+
+        #submit-tablet {
+            display: flex;
+            justify-content: center;
+            align-self: flex-start;
+            width: 50%;
+            margin-top: 22px;
+            border: none;
+            background-color: #AACE9B;
+            color: #373867;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'roboto';
+        }
+
+        textarea {
+            height: 160px;
         }
     }

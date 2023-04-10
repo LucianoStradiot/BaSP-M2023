@@ -46,25 +46,27 @@
             </li>
           </ul>
         </nav>
-        <h2 id="contact-info">
-          Contact Information
-        </h2>
-          <ul class="down-list">
-            <li class="info-menu">
-              <a href="#form" id="btn-info">
-                <img src="../assets/email.png" alt="email" class="img-info"/>
-                  information@untitled.tld
-              </a>
-            </li>
-            <li class="info-menu">
-              <img src="../assets/phone.png" alt="phone-icon" class="img-info"/>
-                (000)000-0000
-            </li>
-            <li class="info-menu">
-              <img src="../assets/home-icon.svg" alt="home-icon" class="img-info" id="home-icon"/>
-                1234 Somewhere Road #8254 Nashville, TN
-            </li>
-          </ul>
+        <div id="contact-info">
+          <h2>
+            Contact Information
+          </h2>
+            <ul class="list">
+              <li class="info-menu">
+                <a href="#form" id="btn-info">
+                  <img src="../assets/email.png" alt="email" class="img-info"/>
+                    information@untitled.tld
+                </a>
+              </li>
+              <li class="info-menu">
+                <img src="../assets/phone.png" alt="phone-icon" class="img-info"/>
+                  (000)000-0000
+              </li>
+              <li class="info-menu">
+                <img src="../assets/home-icon.svg" alt="home-icon" class="img-info" id="home-icon"/>
+                  1234 Somewhere Road #8254 Nashville, TN
+              </li>
+            </ul>
+        </div>
       </aside>
       <main>
         <div id="block">
@@ -182,6 +184,7 @@
                       E-mail address
                     </label>
                       <input id="e-mail-address" type="text" name="e-mail-address" placeholder="Enter address" required/>
+                      <input id="submit-tablet" type="submit" value="Submit"/>
                   </div>
                   <div class="block-form">
                     <label for="contact-reason" class="label-form">
@@ -201,16 +204,14 @@
                           I want to know the memberships and costs
                         </option>
                       </select>
-                      <div class="message-block">
-                        <label for="message" class="label-form">
-                          Message
-                        </label>
-                          <textarea id="message" name="message" cols="40" rows="5" placeholder="Enter your message" required>
-                          </textarea>
-                      </div>
+                      <label for="message" class="label-form">
+                        Message
+                      </label>
+                        <textarea id="message" name="message" cols="40" rows="5" placeholder="Enter your message" required>
+                        </textarea>
                   </div>
                 </div>
-                  <input id="submit" type="submit" value="Submit"/>
+                  <input id="submit-general" type="submit" value="Submit"/>
             </form>
             <div class="activities-list">
               <h2 class="section-title">
