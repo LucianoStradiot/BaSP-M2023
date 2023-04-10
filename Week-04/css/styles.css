@@ -5,6 +5,12 @@ body {
     color: #373867;
 }
 
+/* Aside */
+
+aside{
+    display: none;
+}
+
 /* Main */
 
 main {
@@ -29,7 +35,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 93%;
 }
 
 input, select, textarea, option {
@@ -37,10 +43,6 @@ input, select, textarea, option {
     padding: 10px 12px;
     border: 2px solid #373867;
     border-radius: 4px;
-}
-
-select {
-    width: auto;
 }
 
 textarea {
@@ -61,9 +63,6 @@ tbody{
     position: relative;
     padding: 10px;
 }
-
-
-
 
 
 

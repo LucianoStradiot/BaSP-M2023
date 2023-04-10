@@ -1,5 +1,117 @@
+/* Compound selectors of the Aside */
+
+@media (min-width: 1025px) {
+    #hamburguer-icon {
+        display: none;
+    }
+
+    aside {
+        display: block;
+    }
+    .container {
+        position: fixed;
+        width: 313px;
+        height: 100%;
+        top: 91px;
+        background-color: #AACE9B;
+        z-index: 2;
+    }
+
+    .list {
+        position: relative;
+        left: 32px;
+        bottom: 3px;
+    }
+
+    .down-list {
+        position: relative;
+        width: 250px;
+        left: 43px;
+        top: 455px;
+    }
+
+    .btn-nav {
+        position: relative;
+        width: 263px;
+        height: 38px;
+        right: 25px;
+        margin: 16px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .btn-menu {
+        position: relative;
+        display: block;
+        top: 8px;
+        text-align: center;
+        text-decoration: none;
+        color: #373867;
+        font-family: 'roboto', 'san-serif', 'arial';
+        font-size: 20px;
+        font-weight: 876;
+        font-style: normal;
+
+    }
+
+    #btn-info {
+        color: #373867;
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+        color: #373867;
+    }
+
+        /* Information contact of the Sidebar */
+
+    #contact-info {
+        position: relative;
+        top: 425px;
+        margin-left: 65px;
+        margin-right: 65px;
+        text-align: center;
+        border-bottom: 3px solid #fff;
+        color: #fff;
+        font-family: 'roboto', 'san-serif', 'arial';
+        font-size: 20px;
+        font-weight: 876;
+        font-style: normal;
+    }
+
+    #home-icon {
+        width: 14px;
+        height: 15px;
+    }
+
+    .info-menu {
+        position: relative;
+        right: 13px;
+        margin-top: 23px;
+        color: #373867;
+        font-family: 'roboto', 'san-serif', 'arial';
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .info-menu:nth-child(3) {
+        position: relative;
+        right: 19px;
+        text-align: center;
+    }
 
 
-aside{
-    display: none;
+    .img-info {
+        position: relative;
+        margin-right: 13px;
+    }
+
+    /* Main */
+
+    main {
+        margin-left: 348px;
+    }
 }

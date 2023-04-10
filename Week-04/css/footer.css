@@ -26,3 +26,9 @@ footer p {
     width: 70px;
     padding-bottom: 5px;
 }
+
+@media (min-width: 1025px) {
+    footer {
+        margin-left: 310px;
+    }
+}
