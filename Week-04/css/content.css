@@ -20,6 +20,7 @@
 .main-photo {
     display: flex;
     height: 50%;
+    justify-content: end;
 }
 
 .main-photo img {
@@ -114,6 +115,7 @@
     margin: 10px 0px;
     border: 2px solid #373867;
     border-radius: 5px;
+    cursor: pointer;
     background-color: #fff;
     color: #373867;
     font-size: 12px;
@@ -223,22 +225,25 @@ form .label-form {
 @media (min-width: 601px) {
     #block {
         display: flex;
+        align-items: center;
     }
 
     .main-block {
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: 79%;
+        padding: 53px 0;
         }
 
         #subtitle {
             display: flex;
             flex-direction: column;
             color: #49A37B;
+            padding: 15px 0;
         }
         .main-photo img {
             display: flex;
-            width: 80%;
+            width: 93%;
             height: 70%;
         }
 
