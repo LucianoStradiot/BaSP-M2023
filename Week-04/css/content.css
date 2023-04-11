@@ -294,8 +294,8 @@ form .label-form {
     form div {
         display: flex;
         justify-content: space-between;
-        width: 90%;
-        padding: 0 6%;
+        width: 95%;
+        padding: 0 4%;
     }
 
     form .block-form {
@@ -308,7 +308,7 @@ form .label-form {
     form .block-form:nth-child(2) {
         display: flex;
         justify-content: start;
-        width: 90%;
+        width: 100%;
     }
 
     form .label-form {
