@@ -301,7 +301,7 @@ form .label-form {
     form .block-form {
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 60%;
         padding: 20px;
     }
 
@@ -311,8 +311,30 @@ form .label-form {
         width: 90%;
     }
 
+    form .label-form {
+        padding: 26px 0px 10px;
+    }
+
+    #submit-general {
+        display: none;
+    }
+
+    #submit-tablet {
+        display: flex;
+        justify-content: center;
+        align-self: flex-start;
+        width: 50%;
+        margin-top: 22px;
+        border: none;
+        background-color: #AACE9B;
+        color: #373867;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'roboto';
+    }
+
     textarea {
-        height: 50px;
+        height: 160px;
     }
 
     /* Compound selectors of the Activities section */
@@ -369,55 +391,5 @@ form .label-form {
 
         .section-2 .about-to-article {
             font-size: 1.3em;
-        }
-
-        /* Compound selectors of the Form section */
-
-        form div {
-            display: flex;
-            align-self: center;
-        }
-
-        form .block-form {
-            display: flex;
-            justify-content: start;
-            width: 50%;
-            padding-left: 4%;
-            padding-right: 8%;
-        }
-
-        form .block-form:nth-child(2) {
-            display: flex;
-            justify-content: start;
-            align-self: auto;
-            width: 100%;
-            padding-left: 0;
-            padding-right: 40px;
-        }
-
-        form .label-form {
-            padding: 26px 0px 10px;
-        }
-
-        #submit-general {
-            display: none;
-        }
-
-        #submit-tablet {
-            display: flex;
-            justify-content: center;
-            align-self: flex-start;
-            width: 50%;
-            margin-top: 22px;
-            border: none;
-            background-color: #AACE9B;
-            color: #373867;
-            font-size: 16px;
-            font-weight: 500;
-            font-family: 'roboto';
-        }
-
-        textarea {
-            height: 160px;
         }
     }
