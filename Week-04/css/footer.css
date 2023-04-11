@@ -1,12 +1,5 @@
 /* Footer */
-
-footer {
-    display: block;
-    padding: 10px;
-    background-color: #AACE9B;
-}
-
-/* Compound selectors of the Footer */
+    /* Compound selectors of the Footer */
 
 footer p {
     text-align: center;
@@ -18,7 +11,6 @@ footer p {
     color: #fff;
     font-size: 14px;
     font-weight: 700;
-    font-family: 'roboto';
 }
 
 .social-btns-1 {
@@ -26,6 +18,8 @@ footer p {
     width: 70px;
     padding-bottom: 5px;
 }
+
+/* Desktop resolution */
 
 @media (min-width: 1025px) {
     footer {

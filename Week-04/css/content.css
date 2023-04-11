@@ -1,3 +1,5 @@
+/* Mobile dimension */
+
 /* First section of the Main */
 
 .main-block {
@@ -56,7 +58,6 @@
     margin-right: 10px;
 }
 
-
 .features-article p {
     padding: 10px 0px 25px 0px;
     font-size: 12px;
@@ -72,7 +73,7 @@
     font-weight: 400;
 }
 
-/* Compound selectors of the About to section */
+    /* Compound selectors of the About to section */
 
 .section-2 div {
     display: flex;
@@ -109,9 +110,8 @@
     font-family: 'roboto';
 }
 
-/* Form section */
+/* First block of the Form section */
     /* Compound selectors of the Form section */
-        /* First block of the Form section */
 
 form .block-form {
     display: flex;
@@ -125,7 +125,7 @@ form .label-form {
     font-weight: 500;
 }
 
-        /* Second block of the Form section */
+    /* Second block of the Form section */
 
 #submit-general {
     display: flex;
@@ -153,8 +153,7 @@ form .label-form {
     padding: 15px;
 }
 
-
-/* Compound selectors of the Activities section */
+    /* Compound selectors of the Activities section */
 
 .activities-list ul {
     display: flex;
@@ -189,7 +188,7 @@ form .label-form {
 }
 
 /* Table section */
-/* Compound selectors of the Table section */
+    /* Compound selectors of the Table section */
 
 .membership-table-grey {
     height: 59px;
@@ -213,8 +212,13 @@ form .label-form {
     text-align: center;
 }
 
+/* Tablet dimension */
+
 @media (min-width: 601px) {
-    main .first-block{
+
+    /* First section of the Main */
+
+    main .first-block {
         display: flex;
         align-items: center;
     }
@@ -222,120 +226,131 @@ form .label-form {
     .main-block {
         width: 50%;
         padding: 10px 30px 0 0;
-        }
-
-        .main-block:nth-child(2) {
-            width: 50%;
-            padding: 0;
-            }
-
-        #subtitle {
-            display: flex;
-            flex-direction: column;
-            color: #49A37B;
-            padding: 15px 0;
-        }
-        .main-block img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .features-article {
-            display: flex;
-            width: 50%;
-            padding: 0px 20px;
-        }
-
-        .features-title {
-            font-size: 1.2em;
-            font-weight: 876;
-        }
-
-        .block-features {
-            display: flex;
-        }
-
-        .section-2 div {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        .section-2 div:nth-child(3) {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-
-        .section-2 img {
-            width: 40%;
-            height: 40%;
-        }
-
-        .section-2 .about-to-article {
-            width: 50%;
-        }
-
-        .btn-learn-more {
-            display: none;
-        }
-
-        form {
-            width: 100%;
-        }
-
-        form div {
-            display: flex;
-            justify-content: space-between;
-            width: 90%;
-            padding: 0 6%;
-        }
-
-        form .block-form {
-            display: flex;
-            justify-content: space-between;
-            width: 90%;
-            padding: 20px;
-        }
-
-        form .block-form:nth-child(2) {
-            display: flex;
-            justify-content: start;
-            width: 90%;
-        }
-
-        textarea {
-            height: 50px;
-        }
-
-        .activities-list div {
-            display: flex;
-        }
-
-        .activities-list ul {
-            display: flex;
-            flex-direction: column;
-            padding: 30px 0;
-        }
-
-        .activities-block {
-            flex-direction: column;
-            padding: 0 0 0 10%;
-
-        }
-
-        .activities-list li {
-            width: 146px;
-            font-size: 24px;
-            list-style: inside;
-        }
-
-        .activities-list img {
-            width: 85%;
-            height: 100%;
-        }
     }
 
+    .main-block:nth-child(2) {
+        width: 50%;
+        padding: 0;
+    }
+
+    #subtitle {
+        display: flex;
+        flex-direction: column;
+        color: #49A37B;
+        padding: 15px 0;
+    }
+
+    .main-block img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Features section */
+
+    .features-article {
+        display: flex;
+        width: 50%;
+        padding: 0px 20px;
+    }
+
+    .features-title {
+        font-size: 1.2em;
+        font-weight: 876;
+    }
+
+    .block-features {
+        display: flex;
+    }
+
+    /* About to section */
+        /* Compound selectors of the About to section */
+
+    .section-2 div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section-2 div:nth-child(3) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .section-2 img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .section-2 .about-to-article {
+        width: 50%;
+    }
+
+    .btn-learn-more {
+        display: none;
+    }
+
+    /* Compound selectors of the Form section */
+
+    form div {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding: 0 6%;
+    }
+
+    form .block-form {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding: 20px;
+    }
+
+    form .block-form:nth-child(2) {
+        display: flex;
+        justify-content: start;
+        width: 90%;
+    }
+
+    textarea {
+        height: 50px;
+    }
+
+    /* Compound selectors of the Activities section */
+
+    .activities-list div {
+        display: flex;
+    }
+
+    .activities-list ul {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .activities-block {
+        flex-direction: column;
+        padding: 0 0 0 10%;
+
+    }
+
+    .activities-list li {
+        width: 146px;
+        font-size: 24px;
+        list-style: inside;
+    }
+
+    .activities-list img {
+        width: 85%;
+        height: 100%;
+    }
+}
+
+    /* Desktop dimension */
+
     @media (min-width: 1025px) {
+
+        /* First section of the Main */
+
         .first-block {
             display: flex;
         }
@@ -344,17 +359,19 @@ form .label-form {
             width: 90%;
         }
 
+        /* Features section */
+
         .features-article p {
             font-size: 1.3em;
         }
+
+        /* Compound selectors of the About to section */
 
         .section-2 .about-to-article {
             font-size: 1.3em;
         }
 
-        form {
-            width: 100%;
-        }
+        /* Compound selectors of the Form section */
 
         form div {
             display: flex;

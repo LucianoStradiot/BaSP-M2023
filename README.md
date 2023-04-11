@@ -17,5 +17,9 @@ In this week we create the landing page with his differents sections without any
 ```
 In this week we create the styles for the landing page so it matches 100% to the original design proposed in figma the first week.
 ```
+### WEEK - 04
+```
+In this week we recreate the styles, that we had the last week for the landing page, in a responsive way so it fits on any resolution <Mobile, Tablet, Desktop>, to the original design proposed in figma the first week.
+```
 
 _New content will be added every week to improve it and eventually reach the expected result._

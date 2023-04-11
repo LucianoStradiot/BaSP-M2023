@@ -1,12 +1,4 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: #373867;
-    z-index: 3;
-}
+/* Header */
 
 .logos {
     display: flex;
