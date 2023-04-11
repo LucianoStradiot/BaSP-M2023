@@ -214,15 +214,20 @@ form .label-form {
 }
 
 @media (min-width: 601px) {
-    main div {
+    main .first-block{
         display: flex;
         align-items: center;
     }
 
     .main-block {
         width: 50%;
-        padding: 35px 0;
+        padding: 10px 30px 0 0;
         }
+
+        .main-block:nth-child(2) {
+            width: 50%;
+            padding: 0;
+            }
 
         #subtitle {
             display: flex;
@@ -231,7 +236,7 @@ form .label-form {
             padding: 15px 0;
         }
         .main-block img {
-            width: 90%;
+            width: 100%;
             height: 100%;
         }
 
@@ -239,6 +244,11 @@ form .label-form {
             display: flex;
             width: 50%;
             padding: 0px 20px;
+        }
+
+        .features-title {
+            font-size: 1.2em;
+            font-weight: 876;
         }
 
         .block-features {
@@ -263,7 +273,6 @@ form .label-form {
 
         .section-2 .about-to-article {
             width: 50%;
-            font-size: 12px;
         }
 
         .btn-learn-more {
@@ -283,7 +292,7 @@ form .label-form {
 
         form .block-form {
             display: flex;
-            justify-content: start;
+            justify-content: space-between;
             width: 90%;
             padding: 20px;
         }
@@ -294,26 +303,8 @@ form .label-form {
             width: 90%;
         }
 
-        #submit-general {
-            display: none;
-        }
-
-        #submit-tablet {
-            display: flex;
-            justify-content: center;
-            align-self: flex-start;
-            width: 60%;
-            margin-top: 22px;
-            border: none;
-            background-color: #AACE9B;
-            color: #373867;
-            font-size: 16px;
-            font-weight: 500;
-            font-family: 'roboto';
-        }
-
         textarea {
-            height: 145px;
+            height: 50px;
         }
 
         .activities-list div {
@@ -345,8 +336,20 @@ form .label-form {
     }
 
     @media (min-width: 1025px) {
-        #block {
+        .first-block {
             display: flex;
+        }
+
+        .main-block img {
+            width: 90%;
+        }
+
+        .features-article p {
+            font-size: 1.3em;
+        }
+
+        .section-2 .about-to-article {
+            font-size: 1.3em;
         }
 
         form {
