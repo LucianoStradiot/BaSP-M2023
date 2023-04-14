@@ -7,8 +7,9 @@
     num1 = 10;
     num2 = 20;
 
-    numbersSum = num1 + num2;
+    var numbersSum = num1 + num2;
     console.log(numbersSum);
+    console.log('');
 
     //Exercise 1.b
 
@@ -19,7 +20,9 @@
     name1 = 'Luis';
     name2 = 'Andrea';
 
-    console.log('The names are: ' + name1 + ' and ' + name2);
+    var names = 'The names are: ' + name1 + ' and ' + name2;
+    console.log(names);
+    console.log('');
 
     //Exercise 1.c
 
@@ -32,3 +35,6 @@
 
     stringsSum = name1.length + name2.length
     console.log(stringsSum);
+    console.log('');
+
+    //The console.log that have an empty string I used for a netear code.
