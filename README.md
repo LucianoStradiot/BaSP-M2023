@@ -1,7 +1,7 @@
 # Mega Rocket App
-```
-Mega rocket is an app in constant development that is designed for gyms and can be used, for example, from the moment a student wants to register for a class until the teacher can see which class he/she has been assigned, among other things.
-```
+
+ Mega rocket is an app in constant development that is designed for gyms and can be used, for example, from the moment a student wants to register for a class until the teacher can see which class he/she has been assigned, among other things.
+
 
 ## Development
 ### WEEK - 01
@@ -27,6 +27,10 @@ In the first week we built the UI design for the whole app in Figma, such as:
 for the landing page, in a responsive way so it fits on any
 resolution (Mobile,  Tablet, Desktop), to the original design proposed
 in figma the first week.
+
+### WEEK - 05
+
+* In this week we will do some exercises of JavaScript divided into different js files in the folder "exercises". This will be displayed on the console in an index.html file.
 
 
 _New content will be added every week to improve it and eventually reach the expected result._
