@@ -33,7 +33,7 @@
     name1 = 'Luciano';
     name2 = 'Josefina';
 
-    stringsSum = name1.length + name2.length
+    stringsSum = name1.length + name2.length;
     console.log(stringsSum);
     console.log('');
 

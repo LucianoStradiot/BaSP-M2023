@@ -20,8 +20,8 @@
 
     console.log('Exercise 3.c');
 
-    months.unshift('First')
-    months.push('Last')
+    months.unshift('First');
+    months.push('Last');
 
     console.log(months);
     console.log('');
@@ -30,8 +30,8 @@
 
     console.log('Exercise 3.d');
 
-    months.shift('First')
-    months.pop('Last')
+    months.shift('First');
+    months.pop('Last');
 
     console.log(months);
     console.log('');
