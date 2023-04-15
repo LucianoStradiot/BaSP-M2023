@@ -1,4 +1,10 @@
 //Exercise 2
+
+    console.log('***************');
+    console.log('Exercise 2');
+    console.log('***************');
+    console.log('');
+
     //Exercise 2.a
 
     console.log('Exercise 2.a');
