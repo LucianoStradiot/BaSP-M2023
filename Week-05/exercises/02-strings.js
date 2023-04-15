@@ -42,7 +42,7 @@
 
     console.log('Exercise 2.e');
 
-    var name1 = 'evangelina ';
+    var name1 = 'Evangelina ';
     var spaceName = name1.indexOf(' ');
 
     console.log(spaceName);
