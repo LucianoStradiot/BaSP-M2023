@@ -27,7 +27,7 @@
 /* Features section */
 
 .section-title {
-    padding: 20px 0px;
+    padding: 45px 0px;
     text-align: center;
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -356,7 +356,7 @@ form .label-form {
     }
 
     .activities-list li {
-        width: 146px;
+        width: 160px;
         font-size: 24px;
         list-style: inside;
     }

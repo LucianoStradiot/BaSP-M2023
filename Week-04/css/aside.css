@@ -36,7 +36,8 @@
     .btn-menu {
         position: relative;
         display: block;
-        top: 8px;
+        padding: 11px 0;
+        bottom: 3px;
         text-align: center;
         text-decoration: none;
         color: #373867;
