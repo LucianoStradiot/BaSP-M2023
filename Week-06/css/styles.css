@@ -1,0 +1,106 @@
+
+body {
+    font-family: 'roboto';
+    color: #373867;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #373867;
+    z-index: 3;
+}
+
+/* Aside */
+
+aside {
+    display: none;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    padding: 92px 0 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px ;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+/* Form section */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, select, textarea, option {
+    width: 92%;
+    padding: 10px 12px;
+    border: 2px solid #373867;
+    border-radius: 4px;
+}
+
+select {
+    width: 98%;
+}
+
+textarea {
+    height: 191px;
+    width: 93%;
+}
+
+/* Table section */
+
+table {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+tbody {
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    padding: 10px;
+    background-color: #AACE9B;
+}
+
+@media (min-width: 601px) {
+    form {
+        width: 90%;
+    }
+}
+
+/* Desktop resolution */
+
+@media (min-width: 1025px) {
+
+    /* Main */
+
+    main {
+        margin-left: 348px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
