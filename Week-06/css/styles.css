@@ -84,12 +84,6 @@ footer {
     background-color: #AACE9B;
 }
 
-@media (min-width: 601px) {
-    form {
-        width: 90%;
-    }
-}
-
 /* Desktop resolution */
 
 @media (min-width: 1025px) {

@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <!-- <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/aside.css" /> -->
+    <link rel="stylesheet" href="../css/aside.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <header>
@@ -80,28 +81,37 @@
       </div>
     </aside>
     <form>
-      <h2 class="section-title" id="form">Log In</h2>
-      <div>
-        <div class="block-form">
-          <label for="first-name" class="label-form"> First name </label>
+      <div class="container-form">
+        <h2 class="login-title" id="form">Log In</h2>
+        <div class="block">
+          <label for="e-mail" class="label"> E-mail </label>
           <input
-            id="first-name"
+            id="e-mail"
             type="text"
-            name="first-name"
-            placeholder="Enter first name"
+            name="e-mail"
+            placeholder="Enter your e-mail"
           />
-          <label for="last-name" class="label-form"> Last name </label>
+          <label for="password" class="label"> Password </label>
           <input
-            id="last-name"
-            type="text"
-            name="last-name"
-            placeholder="Enter last name"
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
           />
+          <div class="remember-me">
+            <input id="input-remember-me" type="checkbox" name="remember-me" />
+            <label for="remember-me" class="label-remember-me"
+              >Remember me</label
+            >
+          </div>
         </div>
-        <div>
-          <input id="remember-me" type="checkbox" name="remember-me" />
-          <label for="remember-me">Remember me</label>
-          <input id="submit-general" type="submit" value="Enter" />
+        <div class="submit-container">
+          <input
+            id="submit-general"
+            type="submit"
+            value="Enter"
+            class="label"
+          />
         </div>
       </div>
     </form>
