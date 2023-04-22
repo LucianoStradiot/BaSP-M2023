@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/aside.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <header>
@@ -37,13 +39,13 @@
             </a>
           </li>
           <li class="btn-nav">
-            <a href="#" class="btn-menu">
+            <a href="sign-up.html" class="btn-menu">
               <img src="../../assets/arrow-up.svg" alt="arrow-up-icon" />
               Sign up
             </a>
           </li>
           <li class="btn-nav">
-            <a href="#" class="btn-menu">
+            <a href="login.html" class="btn-menu">
               <img src="../../assets/arrow-right.svg" alt="arrow-right-icon" />
               Sign In
             </a>
@@ -79,5 +81,40 @@
         </ul>
       </div>
     </aside>
+    <form>
+      <div class="container-form">
+        <h2 class="login-title" id="form">Log In</h2>
+        <div class="block">
+          <label for="e-mail" class="label"> E-mail </label>
+          <input
+            id="e-mail"
+            type="text"
+            name="e-mail"
+            placeholder="Enter your e-mail"
+          />
+          <label for="password" class="label"> Password </label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <div class="remember-me">
+            <input id="input-remember-me" type="checkbox" name="remember-me" />
+            <label for="remember-me" class="label-remember-me"
+              >Remember me</label
+            >
+          </div>
+        </div>
+        <div class="submit-container">
+          <input
+            id="submit-general"
+            type="submit"
+            value="Login"
+            class="label"
+          />
+        </div>
+      </div>
+    </form>
   </body>
 </html>
