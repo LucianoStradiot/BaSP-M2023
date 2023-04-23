@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-Up</title>
+    <title>MEGA ROCKET</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/aside.css" />
-    <link rel="stylesheet" href="../css/sign-up.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+
+    <script src="../js/sign-up.js"></script>
   </head>
   <body>
     <header>
@@ -82,37 +84,103 @@
       </div>
     </aside>
     <form>
-      <div class="container-form">
-        <h2 class="login-title" id="form">Log In</h2>
-        <div class="block">
-          <label for="e-mail" class="label"> E-mail </label>
-          <input
-            id="e-mail"
-            type="text"
-            name="e-mail"
-            placeholder="Enter your e-mail"
-          />
-          <label for="password" class="label"> Password </label>
-          <input
-            id="password"
-            type="password"
-            name="password"
-            placeholder="Enter your password"
-          />
-          <div class="remember-me">
-            <input id="input-remember-me" type="checkbox" name="remember-me" />
-            <label for="remember-me" class="label-remember-me"
-              >Remember me</label
-            >
+      <div class="container-form-sign-up">
+        <h2 class="login-title" id="form">Sign up</h2>
+        <div class="container-block">
+          <div>
+            <label for="name" class="label"> Name </label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+            />
+            <label for="last-name" class="label"> Last Name </label>
+            <input
+              id="last-name"
+              type="text"
+              name="last-name"
+              placeholder="Enter your last name"
+            />
+            <label for="DNI" class="label"> DNI </label>
+            <input
+              id="DNI"
+              type="number"
+              name="DNI"
+              placeholder="Enter your DNI"
+            />
+            <label for="birth-date" class="label"> Birth Date </label>
+            <input
+              id="birth-date"
+              type="date"
+              name="birth-date"
+              placeholder="Enter your birth date"
+            />
+            <label for="phone" class="label"> Phone </label>
+            <input
+              id="phone"
+              type="number"
+              name="phone"
+              placeholder="Enter your phone"
+            />
+          </div>
+          <div>
+            <label for="address" class="label"> Address </label>
+            <input
+              id="address"
+              type="text"
+              name="address"
+              placeholder="Enter your address"
+            />
+            <label for="city" class="label"> City </label>
+            <input
+              id="city"
+              type="text"
+              name="city"
+              placeholder="Enter your city"
+            />
+            <label for="postal-code" class="label"> Postal Code </label>
+            <input
+              id="postal-code"
+              type="number"
+              name="postal-code"
+              placeholder="Enter your postal code"
+            />
+            <label for="e-mail" class="label"> E-mail </label>
+            <input
+              id="e-mail"
+              type="text"
+              name="e-mail"
+              placeholder="Enter your e-mail"
+            />
+            <label for="password" class="label"> Password </label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+            <label for="password" class="label"> Repeat Password </label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Repeat your password"
+            />
           </div>
         </div>
-        <div class="submit-container">
-          <input
-            id="submit-general"
-            type="submit"
-            value="Login"
-            class="label"
-          />
+        <div class="register-container">
+          <div class="submit-container">
+            <a href="index.html" id="home">Home</a>
+          </div>
+          <div class="submit-container">
+            <input
+              id="submit-general"
+              type="submit"
+              value="Register"
+              class="label"
+            />
+          </div>
         </div>
       </div>
     </form>
