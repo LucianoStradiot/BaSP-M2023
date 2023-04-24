@@ -74,6 +74,18 @@
     border: none;
 }
 
+.warnings {
+    text-align: center;
+    width: 180px;
+    margin: auto;
+    color: red;
+}
+
+.red-border {
+    padding: 10px;
+    border-color: red;
+}
+
 /* Tablet Resolution */
 
 @media (min-width: 601px) {
@@ -91,6 +103,10 @@
     .container-form {
         margin-left: 41%;
         margin-right: 11%;
+    }
+
+    #home {
+        display: none;
     }
 }
 

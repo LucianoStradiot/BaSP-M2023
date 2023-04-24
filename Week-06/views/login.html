@@ -85,7 +85,7 @@
         </ul>
       </div>
     </aside>
-    <form>
+    <form id="add-form">
       <div class="container-form">
         <h2 class="login-title" id="form">Log In</h2>
         <div class="block">
@@ -96,6 +96,7 @@
             name="e-mail"
             placeholder="Enter your e-mail"
           />
+          <p class="warnings" id="warnings"></p>
           <label for="password" class="label"> Password </label>
           <input
             id="password"
@@ -103,6 +104,7 @@
             name="password"
             placeholder="Enter your password"
           />
+          <p class="warnings" id="warnings-2"></p>
           <div class="remember-me">
             <input id="input-remember-me" type="checkbox" name="remember-me" />
             <label for="remember-me" class="label-remember-me"
