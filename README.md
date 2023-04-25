@@ -32,5 +32,9 @@ in figma the first week.
 
 * In this week we will do some exercises of JavaScript divided into different js files in the folder "exercises". This will be displayed on the console in an index.html file.
 
+### WEEK - 06
+
+* In this week we will add the sign up and sign in forms to the landing page and his respective validations on each field with JavaScript.
+
 
 _New content will be added every week to improve it and eventually reach the expected result._
