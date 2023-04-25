@@ -82,8 +82,11 @@
 }
 
 .red-border {
-    padding: 10px;
     border-color: red;
+}
+
+.green-border {
+    border-color: green;
 }
 
 /* Tablet Resolution */

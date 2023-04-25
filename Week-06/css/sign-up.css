@@ -26,6 +26,11 @@
     padding: 55px;
 }
 
+.warningsSign {
+    text-align: center;
+    color: red;
+}
+
 /* Desktop Resolution */
 
 @media (min-width: 1025px) {
