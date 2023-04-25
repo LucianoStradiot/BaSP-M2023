@@ -18,17 +18,17 @@ var charsNumb = "0123456789";
 var paragraph = document.getElementById("warningsName");
 var paragraph2 = document.getElementById("warningsLastName");
 
-function validateName(input) {
-  var value = input.value;
+function validateName(inputN) {
+  var nameI = inputN.value;
   var validLetters = true;
 
-  for (var i = 0; i < value.length; i++) {
-    if (chars.indexOf(value.charAt(i)) == -1) {
+  for (var i = 0; i < nameI.length; i++) {
+    if (chars.indexOf(nameI.charAt(i)) == -1) {
       validLetters = false;
       break;
     }
   }
-  if (validLetters && value.length >= 3) {
+  if (validLetters && nameI.length >= 3) {
     return true;
   } else {
     return false;
@@ -205,11 +205,18 @@ phoneInput.addEventListener("focus", function () {
 
 var paragraph6 = document.getElementById("warningsAddress");
 
-function validateAddress() {}
+function validateAddress(addressInput) {
+  var address = addressInput.value;
+  if (address.length < 5) {
+    return false;
+  } else {
+    return true;
+  }
+}
 
 addressInput.addEventListener("blur", function () {
   var warnings = "";
-  var rslt = validateName(addressInput);
+  var rslt = validateAddress(addressInput);
 
   if (rslt) {
     addressInput.classList.remove("red-border");
@@ -217,7 +224,7 @@ addressInput.addEventListener("blur", function () {
   } else {
     addressInput.classList.remove("green-border");
     addressInput.classList.add("red-border");
-    warnings += "Must contain numbers and more than 5 letters ";
+    warnings += "Must contain numbers and 5 letters at least";
     paragraph6.innerHTML = warnings;
   }
 });
@@ -409,4 +416,64 @@ repeatPassInput.addEventListener("focus", function () {
 
   repeatPassInput.classList.remove("green-border");
   repeatPassInput.classList.remove("red-border");
+});
+
+/* Validate Register */
+
+var formInput = document.getElementById("add-form");
+
+formInput.addEventListener("submit", function validateForm(e) {
+  e.preventDefault();
+  if (
+    nameInput.classList.contains("red-border") ||
+    lastNameInput.classList.contains("red-border") ||
+    dniInput.classList.contains("red-border") ||
+    bDateInput.classList.contains("red-border") ||
+    phoneInput.classList.contains("red-border") ||
+    addressInput.classList.contains("red-border") ||
+    cityInput.classList.contains("red-border") ||
+    pCodeInput.classList.contains("red-border") ||
+    emailInput.classList.contains("red-border") ||
+    passInput.classList.contains("red-border") ||
+    repeatPassInput.classList.contains("red-border")
+  ) {
+    alert("Some inputs have the wrong information");
+  } else if (
+    nameInput.value == "" ||
+    lastNameInput.value == "" ||
+    dniInput.value == "" ||
+    bDateInput.value == "" ||
+    phoneInput.value == "" ||
+    addressInput.value == "" ||
+    cityInput.value == "" ||
+    pCodeInput.value == "" ||
+    emailInput.value == "" ||
+    passInput.value == "" ||
+    repeatPassInput.value == ""
+  ) {
+    alert("The fields are empty!");
+  } else {
+    alert(
+      "The entered name is : " +
+        nameInput.value +
+        "\nThe last name is : " +
+        lastNameInput.value +
+        "\nThe DNI number is : " +
+        dniInput.value +
+        "\nThe birth date is : " +
+        bDateInput.value +
+        "\nThe phone number is : " +
+        phoneInput.value +
+        "\nThe address entered is : " +
+        addressInput.value +
+        "\nThe name of the city is : " +
+        cityInput.value +
+        "\nThe postal code number is : " +
+        pCodeInput.value +
+        "\nThe e-mail is : " +
+        emailInput.value +
+        "\nThe password is : " +
+        passInput.value
+    );
+  }
 });
