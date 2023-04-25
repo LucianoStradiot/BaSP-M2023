@@ -12,6 +12,8 @@ var passInput = document.getElementById("password");
 var chars = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 var charsNumb = "0123456789";
 
+/* Validate Name and Last Name*/
+
 function validateName(input) {
   var value = input.value;
   var validLetters = true;
@@ -28,6 +30,8 @@ function validateName(input) {
     return false;
   }
 }
+
+/* Validate DNI */
 
 function validateDNI(dniNumber) {
   var value = dniNumber.value;
@@ -46,6 +50,8 @@ function validateDNI(dniNumber) {
   }
 }
 
+/* Validate Phone */
+
 function validatePhone(phoneNumber) {
   var value = phoneNumber.value;
   var validNumbers = true;
@@ -63,23 +69,28 @@ function validatePhone(phoneNumber) {
   }
 }
 
+/* Validate Birth Date */
+
 function validateBdate() {
   var bdate = bDateInput.value;
-  var validNumbers = true;
-  console.log(bdate);
-  for (var i = 0; i < bdate.length; i++) {
-    if (bdate.substring(0, 4) !== 4) {
-      validNumbers = false;
-      break;
-    }
+
+  if (bdate.substring(0, 4) < 1930 || bdate.substring(0, 4) > 2013) {
+    return false;
+  } else {
+    return true;
   }
 }
+
+/* Validate Address */
+
+function validateAddress() {}
 
 var paragraph = document.getElementById("warningsName");
 var paragraph2 = document.getElementById("warningsLastName");
 var paragraph3 = document.getElementById("warningsDNI");
 var paragraph4 = document.getElementById("warningsBdate");
 var paragraph5 = document.getElementById("warningsPhone");
+var paragraph6 = document.getElementById("warningsAddress");
 
 nameInput.addEventListener("blur", function () {
   var warnings = "";
@@ -147,6 +158,28 @@ dniInput.addEventListener("focus", function () {
   dniInput.classList.remove("red-border");
 });
 
+bDateInput.addEventListener("blur", function () {
+  var warnings = "";
+  var rslt = validateBdate(bDateInput);
+  console.log(rslt);
+  if (rslt) {
+    bDateInput.classList.remove("red-border");
+    bDateInput.classList.add("green-border");
+  } else {
+    bDateInput.classList.remove("green-border");
+    bDateInput.classList.add("red-border");
+    warnings += "Format not valid";
+    paragraph4.innerHTML = warnings;
+  }
+});
+
+bDateInput.addEventListener("focus", function () {
+  document.getElementById("warningsBdate").innerHTML = "";
+
+  bDateInput.classList.remove("green-border");
+  bDateInput.classList.remove("red-border");
+});
+
 phoneInput.addEventListener("blur", function () {
   var warnings = "";
   var rslt = validatePhone(phoneInput);
@@ -169,24 +202,24 @@ phoneInput.addEventListener("focus", function () {
   phoneInput.classList.remove("red-border");
 });
 
-bDateInput.addEventListener("blur", function () {
+addressInput.addEventListener("blur", function () {
   var warnings = "";
-  var rslt = validateBdate(bDateInput);
+  var rslt = validateName(addressInput);
 
   if (rslt) {
-    bDateInput.classList.remove("red-border");
-    bDateInput.classList.add("green-border");
+    addressInput.classList.remove("red-border");
+    addressInput.classList.add("green-border");
   } else {
-    bDateInput.classList.remove("green-border");
-    bDateInput.classList.add("red-border");
-    warnings += "Must contain 10 numbers";
-    paragraph4.innerHTML = warnings;
+    addressInput.classList.remove("green-border");
+    addressInput.classList.add("red-border");
+    warnings += "Must contain more than 3 letters ";
+    paragraph6.innerHTML = warnings;
   }
 });
 
-bDateInput.addEventListener("focus", function () {
-  document.getElementById("warningsBdate").innerHTML = "";
+addressInput.addEventListener("focus", function () {
+  document.getElementById("warningsAddress").innerHTML = "";
 
-  bDateInput.classList.remove("green-border");
-  bDateInput.classList.remove("red-border");
+  addressInput.classList.remove("green-border");
+  addressInput.classList.remove("red-border");
 });
