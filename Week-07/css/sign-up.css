@@ -1,0 +1,55 @@
+/* Sign up */
+
+.container-form-sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 30px 30px 0;
+    max-width: 70%;
+    width: 100%;
+    margin: 127px 4% 20px;
+    box-shadow: 9px 8px 15px 2px #5b5a5a;
+    background-color: #fafafa;
+}
+
+.container-block {
+    width: 84%;
+}
+
+.container-block div {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-container {
+    padding: 55px;
+}
+
+.warningsSign {
+    text-align: center;
+    color: red;
+}
+
+/* Desktop Resolution */
+
+@media (min-width: 1025px) {
+
+    .container-form-sign-up {
+        margin-left: 350px;
+        align-self: center;
+        max-width: 50%;
+        width: 100%;
+    }
+
+    .container-block {
+        display: flex;
+        align-self: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .container-block div {
+        padding-right: 20px;
+    }
+}

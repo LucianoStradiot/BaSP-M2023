@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEGA ROCKET</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/aside.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <script defer src="../js/sign-up.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logos">
+        <img
+          src="../../assets/logo-mega-rocket.png"
+          alt="Logo"
+          id="principal-logo"
+        />
+      </div>
+      <div class="logos">
+        <img
+          src="../../assets/hamburguer-menu.svg"
+          alt="hamburguer-menu-icon"
+          id="hamburguer-icon"
+        />
+      </div>
+    </header>
+    <aside class="container">
+      <nav>
+        <ul class="list">
+          <li class="btn-nav">
+            <a href="index.html" class="btn-menu">
+              <img src="../../assets/home-icon.svg" alt="home-icon" />
+              Home
+            </a>
+          </li>
+          <li class="btn-nav">
+            <a href="sign-up.html" class="btn-menu">
+              <img src="../../assets/arrow-up.svg" alt="arrow-up-icon" />
+              Sign up
+            </a>
+          </li>
+          <li class="btn-nav">
+            <a href="login.html" class="btn-menu">
+              <img src="../../assets/arrow-right.svg" alt="arrow-right-icon" />
+              Sign In
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="contact-info">
+        <h2>Contact Information</h2>
+        <ul class="list">
+          <li class="info-menu">
+            <a href="#form" id="btn-info">
+              <img src="../../assets/email.png" alt="email" class="img-info" />
+              information@untitled.tld
+            </a>
+          </li>
+          <li class="info-menu">
+            <img
+              src="../../assets/phone.png"
+              alt="phone-icon"
+              class="img-info"
+            />
+            (000)000-0000
+          </li>
+          <li class="info-menu">
+            <img
+              src="../../assets/home-icon.svg"
+              alt="home-icon"
+              class="img-info"
+              id="home-icon"
+            />
+            1234 Somewhere Road #8254 Nashville, TN
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <form id="add-form">
+      <div class="container-form-sign-up">
+        <h2 class="login-title" id="form">Sign up</h2>
+        <div class="container-block">
+          <div>
+            <label for="name" class="label"> Name </label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+            />
+            <div class="warningsSign" id="warningsName"></div>
+            <label for="last-name" class="label"> Last Name </label>
+            <input
+              id="last-name"
+              type="text"
+              name="last-name"
+              placeholder="Enter your last name"
+            />
+            <div class="warningsSign" id="warningsLastName"></div>
+            <label for="DNI" class="label"> DNI </label>
+            <input
+              id="DNI"
+              type="text"
+              name="DNI"
+              placeholder="Enter your DNI"
+            />
+            <div class="warningsSign" id="warningsDNI"></div>
+            <label for="birth-date" class="label"> Birth Date </label>
+            <input
+              id="birth-date"
+              type="date"
+              name="birth-date"
+              placeholder="Enter your birth date"
+            />
+            <div class="warningsSign" id="warningsBdate"></div>
+            <label for="phone" class="label"> Phone </label>
+            <input
+              id="phone"
+              type="text"
+              name="phone"
+              placeholder="Enter your phone"
+            />
+            <div class="warningsSign" id="warningsPhone"></div>
+          </div>
+          <div>
+            <label for="address" class="label"> Address </label>
+            <input
+              id="address"
+              type="text"
+              name="address"
+              placeholder="Enter your address"
+            />
+            <div class="warningsSign" id="warningsAddress"></div>
+            <label for="city" class="label"> City </label>
+            <input
+              id="city"
+              type="text"
+              name="city"
+              placeholder="Enter your city"
+            />
+            <div class="warningsSign" id="warningsCity"></div>
+            <label for="postal-code" class="label"> Postal Code </label>
+            <input
+              id="postal-code"
+              type="text"
+              name="postal-code"
+              placeholder="Enter your postal code"
+            />
+            <div class="warningsSign" id="warningsPcode"></div>
+            <label for="e-mail" class="label"> E-mail </label>
+            <input
+              id="e-mail"
+              type="text"
+              name="e-mail"
+              placeholder="Enter your e-mail"
+            />
+            <div class="warningsSign" id="warningsEmail"></div>
+            <label for="password" class="label"> Password </label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+            <div class="warningsSign" id="warningsPass"></div>
+            <label for="repeat-password" class="label"> Repeat Password </label>
+            <input
+              id="repeat-password"
+              type="password"
+              name="repeat-password"
+              placeholder="Repeat your password"
+            />
+            <div class="warningsSign" id="warningsPass2"></div>
+          </div>
+        </div>
+        <div class="register-container">
+          <div class="submit-container">
+            <a href="index.html" id="home">Home</a>
+          </div>
+          <div class="submit-container">
+            <input
+              id="submit-general"
+              type="submit"
+              value="Register"
+              class="label"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEGA ROCKET</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/aside.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script defer src="../js/login.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logos">
+        <img
+          src="../../assets/logo-mega-rocket.png"
+          alt="Logo"
+          id="principal-logo"
+        />
+      </div>
+      <div class="logos">
+        <img
+          src="../../assets/hamburguer-menu.svg"
+          alt="hamburguer-menu-icon"
+          id="hamburguer-icon"
+        />
+      </div>
+    </header>
+    <aside class="container">
+      <nav>
+        <ul class="list">
+          <li class="btn-nav">
+            <a href="index.html" class="btn-menu">
+              <img src="../../assets/home-icon.svg" alt="home-icon" />
+              Home
+            </a>
+          </li>
+          <li class="btn-nav">
+            <a href="sign-up.html" class="btn-menu">
+              <img src="../../assets/arrow-up.svg" alt="arrow-up-icon" />
+              Sign up
+            </a>
+          </li>
+          <li class="btn-nav">
+            <a href="login.html" class="btn-menu">
+              <img src="../../assets/arrow-right.svg" alt="arrow-right-icon" />
+              Sign In
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="contact-info">
+        <h2>Contact Information</h2>
+        <ul class="list">
+          <li class="info-menu">
+            <a href="#form" id="btn-info">
+              <img src="../../assets/email.png" alt="email" class="img-info" />
+              information@untitled.tld
+            </a>
+          </li>
+          <li class="info-menu">
+            <img
+              src="../../assets/phone.png"
+              alt="phone-icon"
+              class="img-info"
+            />
+            (000)000-0000
+          </li>
+          <li class="info-menu">
+            <img
+              src="../../assets/home-icon.svg"
+              alt="home-icon"
+              class="img-info"
+              id="home-icon"
+            />
+            1234 Somewhere Road #8254 Nashville, TN
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <form id="add-form">
+      <div class="container-form">
+        <h2 class="login-title" id="form">Log In</h2>
+        <div class="block">
+          <label for="e-mail" class="label"> E-mail </label>
+          <input
+            id="e-mail"
+            type="text"
+            name="e-mail"
+            placeholder="Enter your e-mail"
+          />
+          <p class="warnings" id="warnings"></p>
+          <label for="password" class="label"> Password </label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <p class="warnings" id="warnings-2"></p>
+          <div class="remember-me">
+            <input id="input-remember-me" type="checkbox" name="remember-me" />
+            <label for="remember-me" class="label-remember-me"
+              >Remember me</label
+            >
+          </div>
+        </div>
+        <div class="register-container">
+          <div class="submit-container">
+            <a href="index.html" id="home">Home</a>
+          </div>
+          <div class="submit-container">
+            <input
+              id="submit-general"
+              type="submit"
+              value="Login"
+              class="label"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

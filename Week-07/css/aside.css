@@ -1,0 +1,89 @@
+/* Compound selectors of the Aside */
+
+    /* Desktop resolution */
+
+@media (min-width: 1025px) {
+    #hamburguer-icon {
+        display: none;
+    }
+
+    aside {
+        display: block;
+    }
+
+    .container {
+        position: fixed;
+        width: 313px;
+        height: 100%;
+        top: 91px;
+        background-color: #AACE9B;
+        z-index: 2;
+    }
+
+    .list {
+        padding: 0 31px;
+    }
+
+    .btn-nav {
+        padding: 3px 0;
+        height: 38px;
+        margin: 17px 0;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .btn-menu {
+        position: relative;
+        display: block;
+        padding: 11px 0;
+        bottom: 3px;
+        text-align: center;
+        text-decoration: none;
+        color: #373867;
+        font-size: 20px;
+        font-weight: 876;
+    }
+
+        /* Information contact of the Sidebar */
+
+    #contact-info {
+        display: block;
+        text-align: start;
+        padding-top: 360px;
+    }
+
+    #contact-info .list {
+        padding-top: 25px;
+    }
+
+    #contact-info h2 {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: #fff;
+        text-underline-offset: 6px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 876;
+    }
+
+    #home-icon {
+        width: 14px;
+        height: 15px;
+    }
+
+    #btn-info {
+        color: #373867;
+    }
+
+    .info-menu {
+        margin-top: 23px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .img-info {
+        margin-right: 13px;
+    }
+}

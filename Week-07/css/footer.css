@@ -1,0 +1,28 @@
+/* Footer */
+    /* Compound selectors of the Footer */
+
+footer p {
+    text-align: center;
+}
+
+.social-btns {
+    text-align: center;
+    line-height: 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.social-btns-1 {
+    display: inline-block;
+    width: 70px;
+    padding-bottom: 5px;
+}
+
+/* Desktop resolution */
+
+@media (min-width: 1025px) {
+    footer {
+        margin-left: 310px;
+    }
+}
