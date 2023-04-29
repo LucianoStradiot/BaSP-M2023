@@ -424,7 +424,66 @@ var formInput = document.getElementById("add-form");
 
 formInput.addEventListener("submit", function validateForm(e) {
   e.preventDefault();
-  if (
+
+  function borderValidate() {
+    if (
+      nameInput.classList.contains("red-border") ||
+      lastNameInput.classList.contains("red-border") ||
+      dniInput.classList.contains("red-border") ||
+      bDateInput.classList.contains("red-border") ||
+      phoneInput.classList.contains("red-border") ||
+      addressInput.classList.contains("red-border") ||
+      cityInput.classList.contains("red-border") ||
+      pCodeInput.classList.contains("red-border") ||
+      emailInput.classList.contains("red-border") ||
+      passInput.classList.contains("red-border") ||
+      repeatPassInput.classList.contains("red-border")
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function fieldsValidate() {
+    if (
+      nameInput.value == "" ||
+      lastNameInput.value == "" ||
+      dniInput.value == "" ||
+      bDateInput.value == "" ||
+      phoneInput.value == "" ||
+      addressInput.value == "" ||
+      cityInput.value == "" ||
+      pCodeInput.value == "" ||
+      emailInput.value == "" ||
+      passInput.value == "" ||
+      repeatPassInput.value == ""
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  if (borderValidate() == true || fieldsValidate() == true) {
+    alert("mal");
+  } else {
+    localStorage.setItem("Name", nameInput.value);
+    localStorage.setItem("Last Name", lastNameInput.value);
+    localStorage.setItem("DNI", dniInput.value);
+    localStorage.setItem("Birth Date", bDateInput.value);
+    localStorage.setItem("Phone", phoneInput.value);
+    localStorage.setItem("Address", addressInput.value);
+    localStorage.setItem("Postal Code", pCodeInput.value);
+    localStorage.setItem("Email", emailInput.value);
+    localStorage.setItem("Password", passInput.value);
+    localStorage.setItem("Repeat Password", repeatPassInput.value);
+    /* location.reload(); */
+    /* var namepapa = document.getElementById("name");
+    namepapa.addEventListener('').innerHTML(localStorage.getItem("Name")); */
+  }
+
+  /* if (
     nameInput.classList.contains("red-border") ||
     lastNameInput.classList.contains("red-border") ||
     dniInput.classList.contains("red-border") ||
@@ -475,5 +534,5 @@ formInput.addEventListener("submit", function validateForm(e) {
         "\nThe password is : " +
         passInput.value
     );
-  }
+  } */
 });
