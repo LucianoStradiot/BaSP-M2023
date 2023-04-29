@@ -40,7 +40,7 @@ emailInput.addEventListener("focus", function () {
   emailInput.classList.remove("red-border");
 });
 
-/* Validate Password and Repeat Password */
+/* Validate Password */
 
 var paragraph2 = document.getElementById("warnings-2");
 
@@ -81,20 +81,35 @@ var formInput = document.getElementById("add-form");
 
 formInput.addEventListener("submit", function validateForm(e) {
   e.preventDefault();
+  var url =
+    "https://api-rest-server.vercel.app/login?email=" +
+    emailInput.value +
+    "&password=" +
+    passInput.value;
 
   if (
     emailInput.classList.contains("red-border") ||
     passInput.classList.contains("red-border")
   ) {
-    alert("Some inputs have the wrong information");
+    alert("Some inputs have the wrong information or some fields are empty");
   } else if (emailInput.value == "" || passInput.value == "") {
     alert("The fields are empty!");
   } else {
-    alert(
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        alert(data.msg);
+      })
+      .catch(function (err) {
+        alert("error");
+      });
+    /* alert(
       "The e-mail is : " +
         emailInput.value +
         "\nThe password is : " +
         passInput.value
-    );
+    ); */
   }
 });

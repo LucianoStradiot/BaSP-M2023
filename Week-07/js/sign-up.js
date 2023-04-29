@@ -437,7 +437,7 @@ formInput.addEventListener("submit", function validateForm(e) {
     passInput.classList.contains("red-border") ||
     repeatPassInput.classList.contains("red-border")
   ) {
-    alert("Some inputs have the wrong information");
+    alert("Some inputs have the wrong information or some fields are empty");
   } else if (
     nameInput.value == "" ||
     lastNameInput.value == "" ||

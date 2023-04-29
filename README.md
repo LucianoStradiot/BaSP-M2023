@@ -16,14 +16,14 @@ In the first week we built the UI design for the whole app in Figma, such as:
 * In this week we create the landing page with his differents sections
  without any styles so you will find an html and assets file only.
 
-*https://lucianostradiot.github.io/BaSP-M2023/Week-02/index.html
+* https://lucianostradiot.github.io/BaSP-M2023/Week-02/index.html
 
 ### WEEK - 03
 
 * In this week we create the styles for the landing page so it matches
 100% to the original design proposed in figma the first week.
 
-*https://lucianostradiot.github.io/BaSP-M2023/Week-03/index.html
+* https://lucianostradiot.github.io/BaSP-M2023/Week-03/index.html
 
 ### WEEK - 04
 
@@ -32,14 +32,14 @@ for the landing page, in a responsive way so it fits on any
 resolution (Mobile,  Tablet, Desktop), to the original design proposed
 in figma the first week.
 
-*https://lucianostradiot.github.io/BaSP-M2023/Week-04/index.html
+* https://lucianostradiot.github.io/BaSP-M2023/Week-04/index.html
 
 ### WEEK - 05
 
 * In this week we will do some exercises of JavaScript divided into different js files in the folder "exercises".
   This will be displayed on the console in an index.html file.
 
-*https://lucianostradiot.github.io/BaSP-M2023/Week-05/index.html
+* https://lucianostradiot.github.io/BaSP-M2023/Week-05/index.html
 
 ### WEEK - 06
 
