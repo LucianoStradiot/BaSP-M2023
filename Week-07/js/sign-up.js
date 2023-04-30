@@ -28,7 +28,7 @@ function validateName(inputN) {
       break;
     }
   }
-  if (validLetters && nameI.length >= 3) {
+  if (validLetters && nameI.length > 3) {
     return true;
   } else {
     return false;
@@ -136,10 +136,19 @@ function validateBdate() {
   }
 }
 
+function changeDateFormat(date) {
+  var dateArray = date.split("-");
+  var year = dateArray[0];
+  var month = dateArray[1];
+  var day = dateArray[2];
+  dateArray = month + "/" + day + "/" + year;
+  return dateArray;
+}
+
 bDateInput.addEventListener("blur", function () {
   var warnings = "";
   var rslt = validateBdate(bDateInput);
-  console.log(rslt);
+
   if (rslt) {
     bDateInput.classList.remove("red-border");
     bDateInput.classList.add("green-border");
@@ -421,51 +430,35 @@ repeatPassInput.addEventListener("focus", function () {
 /* Validate Register */
 
 var formInput = document.getElementById("add-form");
-
+var validation = [];
 formInput.addEventListener("submit", function validateForm(e) {
   e.preventDefault();
 
-  function borderValidate() {
-    if (
-      nameInput.classList.contains("red-border") ||
-      lastNameInput.classList.contains("red-border") ||
-      dniInput.classList.contains("red-border") ||
-      bDateInput.classList.contains("red-border") ||
-      phoneInput.classList.contains("red-border") ||
-      addressInput.classList.contains("red-border") ||
-      cityInput.classList.contains("red-border") ||
-      pCodeInput.classList.contains("red-border") ||
-      emailInput.classList.contains("red-border") ||
-      passInput.classList.contains("red-border") ||
-      repeatPassInput.classList.contains("red-border")
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  var url =
+    "https://api-rest-server.vercel.app/signup?name=" +
+    nameInput.value +
+    "&lastName=" +
+    lastNameInput.value +
+    "&dni=" +
+    dniInput.value +
+    "&dob=" +
+    changeDateFormat(bDateInput.value) +
+    "&phone=" +
+    phoneInput.value +
+    "&address=" +
+    addressInput.value +
+    "&city=" +
+    cityInput.value +
+    "&zip=" +
+    pCodeInput.value +
+    "&email=" +
+    emailInput.value +
+    "&password=" +
+    passInput.value +
+    "&password=" +
+    repeatPassInput.value;
 
-  function fieldsValidate() {
-    if (
-      nameInput.value == "" ||
-      lastNameInput.value == "" ||
-      dniInput.value == "" ||
-      bDateInput.value == "" ||
-      phoneInput.value == "" ||
-      addressInput.value == "" ||
-      cityInput.value == "" ||
-      pCodeInput.value == "" ||
-      emailInput.value == "" ||
-      passInput.value == "" ||
-      repeatPassInput.value == ""
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  if (borderValidate() == true || fieldsValidate() == true) {
+  /*if (borderValidate() == true || fieldsValidate() == true) {
     alert("mal");
   } else {
     localStorage.setItem("Name", nameInput.value);
@@ -478,26 +471,22 @@ formInput.addEventListener("submit", function validateForm(e) {
     localStorage.setItem("Email", emailInput.value);
     localStorage.setItem("Password", passInput.value);
     localStorage.setItem("Repeat Password", repeatPassInput.value);
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        alert(data.msg);
+      })
+      .catch(function (err) {
+        alert("error");
+      });
     /* location.reload(); */
-    /* var namepapa = document.getElementById("name");
-    namepapa.addEventListener('').innerHTML(localStorage.getItem("Name")); */
-  }
+  /* var namepapa = document.getElementById("name");
+    namepapa.addEventListener('').innerHTML(localStorage.getItem("Name"));
+  } */
 
-  /* if (
-    nameInput.classList.contains("red-border") ||
-    lastNameInput.classList.contains("red-border") ||
-    dniInput.classList.contains("red-border") ||
-    bDateInput.classList.contains("red-border") ||
-    phoneInput.classList.contains("red-border") ||
-    addressInput.classList.contains("red-border") ||
-    cityInput.classList.contains("red-border") ||
-    pCodeInput.classList.contains("red-border") ||
-    emailInput.classList.contains("red-border") ||
-    passInput.classList.contains("red-border") ||
-    repeatPassInput.classList.contains("red-border")
-  ) {
-    alert("Some inputs have the wrong information or some fields are empty");
-  } else if (
+  if (
     nameInput.value == "" ||
     lastNameInput.value == "" ||
     dniInput.value == "" ||
@@ -512,27 +501,24 @@ formInput.addEventListener("submit", function validateForm(e) {
   ) {
     alert("The fields are empty!");
   } else {
-    alert(
-      "The entered name is : " +
-        nameInput.value +
-        "\nThe last name is : " +
-        lastNameInput.value +
-        "\nThe DNI number is : " +
-        dniInput.value +
-        "\nThe birth date is : " +
-        bDateInput.value +
-        "\nThe phone number is : " +
-        phoneInput.value +
-        "\nThe address entered is : " +
-        addressInput.value +
-        "\nThe name of the city is : " +
-        cityInput.value +
-        "\nThe postal code number is : " +
-        pCodeInput.value +
-        "\nThe e-mail is : " +
-        emailInput.value +
-        "\nThe password is : " +
-        passInput.value
-    );
-  } */
+    fetch(url)
+      .then(function (response) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          return response.json().then(function error() {
+            throw new Error(JSON.stringify(error));
+          });
+        }
+      })
+      .then(function (data) {
+        alert(JSON.stringify(data));
+      })
+      .catch(function (err) {
+        alert(err);
+        var objError = JSON.parse(err.msg);
+        var errs = objError.errs;
+        console.log(errs);
+      });
+  }
 });
