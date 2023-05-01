@@ -297,7 +297,10 @@ function validatePcode(inputPostal) {
   var validNumbers = true;
 
   for (var i = 0; i < postalCode.length; i++) {
-    if (charsNumb.indexOf(postalCode.charAt(i)) == -1) {
+    if (
+      charsNumb.indexOf(postalCode.charAt(i)) == -1 &&
+      chars.indexOf(postalCode.charAt(i)) == -1
+    ) {
       validNumbers = false;
       break;
     }
@@ -458,35 +461,21 @@ formInput.addEventListener("submit", function validateForm(e) {
     "&password=" +
     repeatPassInput.value;
 
-  /*if (borderValidate() == true || fieldsValidate() == true) {
-    alert("mal");
-  } else {
-    localStorage.setItem("Name", nameInput.value);
-    localStorage.setItem("Last Name", lastNameInput.value);
-    localStorage.setItem("DNI", dniInput.value);
-    localStorage.setItem("Birth Date", bDateInput.value);
-    localStorage.setItem("Phone", phoneInput.value);
-    localStorage.setItem("Address", addressInput.value);
-    localStorage.setItem("Postal Code", pCodeInput.value);
-    localStorage.setItem("Email", emailInput.value);
-    localStorage.setItem("Password", passInput.value);
-    localStorage.setItem("Repeat Password", repeatPassInput.value);
-    fetch(url)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        alert(data.msg);
-      })
-      .catch(function (err) {
-        alert("error");
-      });
-    /* location.reload(); */
-  /* var namepapa = document.getElementById("name");
-    namepapa.addEventListener('').innerHTML(localStorage.getItem("Name"));
-  } */
-
   if (
+    nameInput.classList.contains("red-border") ||
+    lastNameInput.classList.contains("red-border") ||
+    dniInput.classList.contains("red-border") ||
+    bDateInput.classList.contains("red-border") ||
+    phoneInput.classList.contains("red-border") ||
+    addressInput.classList.contains("red-border") ||
+    cityInput.classList.contains("red-border") ||
+    pCodeInput.classList.contains("red-border") ||
+    emailInput.classList.contains("red-border") ||
+    passInput.classList.contains("red-border") ||
+    repeatPassInput.classList.contains("red-border")
+  ) {
+    alert("Some inputs have the wrong information or some fields are empty");
+  } else if (
     nameInput.value == "" ||
     lastNameInput.value == "" ||
     dniInput.value == "" ||
@@ -503,22 +492,44 @@ formInput.addEventListener("submit", function validateForm(e) {
   } else {
     fetch(url)
       .then(function (response) {
-        if (response.ok) {
-          return response.json();
-        } else {
-          return response.json().then(function error() {
-            throw new Error(JSON.stringify(error));
-          });
+        return response.json();
+      })
+      .then(function (rsp) {
+        if (rsp.hasOwnProperty("data")) {
+          var keys = Object.keys(rsp.data);
+          for (var i = 1; i < keys.length; i++) {
+            var key = keys[i];
+            if (rsp.data.hasOwnProperty(key)) {
+              var value = rsp.data[key];
+              localStorage.setItem(key, value);
+              alert(key + ": " + value);
+            }
+          }
+        } else if (rsp.hasOwnProperty("errors")) {
+          for (var i = 0; i < rsp.errors.length; i++) {
+            var error = rsp.errors[i];
+            if (error.hasOwnProperty("msg")) {
+              alert(error.msg);
+            }
+          }
         }
       })
-      .then(function (data) {
-        alert(JSON.stringify(data));
-      })
-      .catch(function (err) {
-        alert(err);
-        var objError = JSON.parse(err.msg);
-        var errs = objError.errs;
-        console.log(errs);
+      .catch(function () {
+        alert("Error on the server or incorrect route");
       });
   }
+});
+
+document.addEventListener("DOMContentLoaded", function getValues() {
+  nameInput.value = localStorage.getItem("name");
+  lastNameInput.value = localStorage.getItem("lastName");
+  dniInput.value = localStorage.getItem("dni");
+  bDateInput.value = localStorage.getItem("dob");
+  phoneInput.value = localStorage.getItem("phone");
+  addressInput.value = localStorage.getItem("address");
+  cityInput.value = localStorage.getItem("city");
+  pCodeInput.value = localStorage.getItem("zip");
+  emailInput.value = localStorage.getItem("email");
+  passInput.value = localStorage.getItem("password");
+  repeatPassInput.value = localStorage.getItem("password");
 });
